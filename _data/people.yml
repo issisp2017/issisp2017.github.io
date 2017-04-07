@@ -1,0 +1,61 @@
+---
+people:
+- lastname: Collberg
+  firstname: Christian
+  www: http://collberg.cs.arizona.edu
+  status: board
+  affiliation: University of Arizona
+  id: collberg
+
+- lastname: Giacobazzi
+  firstname: Roberto
+  www: http://profs.sci.univr.it/~giaco
+  status: board
+  id: giacobazzi
+  affiliation: Università di Verona
+
+- lastname: Davidson
+  firstname: Jack
+  www: https://www.cs.virginia.edu/people/faculty/davidson.html
+  status: board
+  id: davidson
+  affiliation: University of Virginia
+
+- lastname: De Sutter
+  firstname: Bjorn
+  www: http://users.elis.ugent.be/~brdsutte/
+  status: board
+  id: desutter
+  affiliation: Ghent University
+
+- lastname: Lakhotia
+  firstname: Arun
+  status: board
+  id: lakhotia
+  affiliation: University of Lousiana
+  
+- lastname: Gu
+  firstname: Yuang
+  status: board
+  id: gu
+  affiliation: Irdeto
+
+- lastname: Bardin
+  firstname: Sébastien
+  www: http://sebastien.bardin.free.fr
+  status: local
+  id: bardin
+  affiliation: CEA LIST
+
+- lastname: Bonichon
+  firstname: Richard
+  www: http://rbonichon.github.io
+  status: local
+  id: bonichon
+  affiliation: CEA LIST
+
+board:
+  longname: Scientific Advisory Board
+
+local:
+  longname: Organizing Committee

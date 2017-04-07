@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+      <!-- Bootstrap Core CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css.3" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+  <link href="/css/issisp.css" rel="stylesheet"/>
+  
+  <script src="/assets/vendor/jquery/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body data-spy="scroll" data-target="#mynavbar">
+    <div class="paris">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+          <a class="navbar-brand" href="#">ISSISP '17</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="nav navbar-nav">
+          <li><a href="#speakers">Speakers      </a></li>
+          <li><a href="#schedule">Schedule      </a></li>
+          <li><a href="#registration">Registration  </a></li>
+          <li><a href="#location">Location      </a></li>
+          <li><a href="#contacts">Contacts      </a></li>
+          </ul>
+        </div>
+      
+        </div>
+      </nav>
+
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-7">
+              <h1>ISSISP 2017</h1>
+              <h2>8th Summer School <br/> on Information Security and Protection</h2>
+            
+              <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Gif-sur-Yvette</h3>
+              <h3><i class="fa fa-calendar" aria-hidden="true"></i> July 17-21, 2017</h3>
+            </div>
+          <div class="col-md-3">
+              <img class="img-responsive img-circle" src="/assets/img/chateau_button.jpg" alt="chateau">
+            </div>
+          </div>
+      </div>
+    </div>
+
+    </div>
+
+    
+    <div class="container">
+      <div class="row" id="speakers">
+        <h1>Speakers</h1>
+                {% include loremipsum.html %}
+      </div>
+      
+      <div class="row" id="schedule">
+        {% include schedule.html %}
+        {% include loremipsum.html %}
+      </div>
+
+      <div class="row" id="registration">
+        <h1>Registration</h1>
+        <div class="row">
+          <div class="col-md-11 col-md-offset-1">
+            <h3>Limited seats available. Register quickly.</h3>
+          </div>
+        </div>
+        
+                {% include loremipsum.html %}
+      </div>
+
+      <div id="location" class="row">
+        <h1>Location</h1>
+
+        <p>
+          The summer school will be held at Château de Button.
+        Here is a succinct
+        <a href="http://www.ville-gif.fr/cadre-de-vie/histoire-et-patrimoine/patrimoine/chateau-de-button/">description
+        </a> (in French).
+
+        </p>
+
+        <div id="map"></div>
+        {% include loremipsum.html %}
+      </div>
+      
+      <div id="contacts" class="row">
+        <h1>Contacts</h1>
+        {% assign people = site.data.people.people | group_by:"status" | sort:"lastname"%}
+        {% assign status = site.data.people.status %}
+        {% assign events = site.data.previous | sort:"-year" %}
+        <div><ul>
+        {% for pgroup in people %}
+
+        {% for person in pgroup.items %}
+
+        {% if forloop.first %}
+        </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>{{ site.data.people[person.status].longname }}</h2>
+          <ul>
+        {% endif %}
+
+        <li>
+          <a href="{{ person.www }}">{{ person.firstname }} {{ person.lastname }}</a>,
+          {{ person.affiliation }}
+        </li> 
+        {% endfor %}
+
+        
+        {% endfor %}
+
+       </div>
+</div>
+
+<div class="row">        
+  <h3>Past ISSISPs</h3>
+  <ul>
+    {% for e in events %}
+    <li>
+      <a href="{{ e.url }}">ISSISP {{ e.year }}</a>, {{ e. location }}
+    </li>
+    {% endfor %}
+  </ul>
+
+</div>
+    </div>
+
+
+
+  </body>
+
+</html>
