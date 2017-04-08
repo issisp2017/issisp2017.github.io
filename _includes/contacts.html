@@ -1,0 +1,46 @@
+<section id="contacts">
+  <div class="container">
+    <div class="row">
+      <h1>Contacts</h1>
+      {% assign board = site.data.board | sort:"lastname"%}
+      {% assign events = site.data.previous | sort:"-year" %}
+      {% assign org = site.data.organizers %}
+
+      <div class="col-md-4">
+        <h3>Scientific advisory board</h3>
+        <ul class="fa-ul">
+          {% for person in board %}
+          <li><i class="fa-li fa fa-square"></i>
+            <a href="{{ person.www }}">{{ person.firstname }} {{ person.lastname }}</a>,
+            {{ person.affiliation }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Organization</h3>
+        <ul class="fa-ul">
+        {% for person in org %}
+        <li><i class="fa-li fa fa-square"></i>
+          <a href="{{ person.www }}">{{ person.firstname }} {{ person.lastname }}</a>,
+          {{ person.affiliation }}
+        </li>
+        {% endfor %}
+
+        </ul>
+      </div>
+
+
+      <div class="col-md-4">
+        <h3>Past events</h3>
+          <ul class="fa-ul">
+            {% for e in events %}
+            <li><i class="fa-li fa fa-square"></i>
+              <a href="{{ e.url }}">ISSISP {{ e.year }}</a>, {{ e. location }}
+            </li>
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
+</section>

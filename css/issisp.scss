@@ -1,21 +1,267 @@
 ---
 ---
 
+@import "variables.scss";
+@import "mixins.scss";
 
-div.paris {
-    .jumbotron {
-        background: transparent;
-        h1, h2, h3, h4 { font-family: "Source Code Pro", "Dejavu Sans", sans-serif;}
+body {
+//    position: relative;
+    overflow-x: hidden;
+}
+
+.navbar-custom {
+    background-color: black;
+    border-color: transparent;
+    .navbar-brand {
+        color: $theme-primary;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: darken($theme-primary, 10%);
+        }
     }
-    .navbar {
+    .navbar-collapse {
+        border-color: fade-out(white, .02);
+    }
+    .navbar-toggle {
+        background-color: $theme-primary;
+        border-color: $theme-primary;
+        color: white;
+        font-size: 12px;
+        &:hover,
+        &:focus {
+            background-color: $theme-primary;
+        }
+    }
+    .nav {
+        li {
+            a {
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: white;
+                &:hover,
+                &:focus {
+                    color: $theme-primary;
+                    outline: none;
+                }
+            }
+        }
+    }
+    .navbar-nav>.active>a {
+        border-radius: 0;
+        color: white;
+        background-color: $theme-primary;
+    }
+    .navbar-nav>.active>a:hover,
+    .navbar-nav>.active>a:focus {
+        color: white;
+        background-color: darken($theme-primary, 10%);
     }
 }
 
 
-body {
-    position: relative;
+@media(min-width:768px) {
+    .navbar-custom {
+//        background-color: transparent;
+        padding: 10px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        border: none;
+        .navbar-brand {
+            font-size: 2em;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        .navbar-nav>.active>a {
+            border-radius: 3px;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-custom.affix {
+        background-color: black;
+        padding: 10px 0;
+        .navbar-brand {
+            font-size: 1.5em;
+        }
+    }
+}
+
+
+nav {
+    @include sans-serif-font;
+    font-weight: 800;
+}
+
+ul.nav > li > a {
+    @include sans-serif-font;
+    font-weight: 700;
+    color: #aaaaaa;
+}
+
+
+p {
+    font-size: 20px;
+    color: $fcolor;
 }
 
 img.chateau {
     width:10%;
+}
+
+section {
+    h1 {
+        @include sans-serif-font;
+        font-weight: 700;
+       }
+}
+
+header {
+    background-image: url('/assets/img/chateau_button.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    @include sans-serif-font;
+    @include background-cover;
+
+
+    text-align: center;
+    color: white;
+  //  min-height: 1000px;
+
+    .intro {
+        padding-top:150px;
+        padding-bottom: 50px;
+
+        .intro-title {
+            font-size: 90px;
+            line-height: 22px;
+            margin-bottom: 55px;
+            opacity: 1;
+            font-weight: 700;
+        }
+        .intro-subtitle {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 35px;
+        }
+        .intro-information {
+            p { font-size: 40px;
+                color : white;
+                font-weight: 700;
+              }
+            margin-top : 200px;
+            margin-bottom: 45px;
+        }
+        .register {
+            margin-top:80px;
+            .btn-click {
+                font-weight: 700;
+                font-size:30px;
+                text-transform: uppercase;
+                color : white;
+
+                padding-left: 25px;
+                padding-right: 25px;
+                background-color: #fec503;
+                border-color: #f6bf01;
+            }
+        }
+    }
+}
+
+
+@media(min-width:768px) {
+    header {
+        .intro {
+            padding-top:150px;
+            padding-bottom: 50px;
+
+            .intro-title {
+                font-size: 90px;
+                line-height: 22px;
+                margin-bottom: 55px;
+                opacity: 1;
+                font-weight: 700;
+            }
+            .intro-subtitle {
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 35px;
+            }
+            .intro-information {
+                p { font-size: 40px;
+                    color : white;
+                    font-weight: 700;
+                  }
+                margin-top : 200px;
+                margin-bottom: 45px;
+            }
+            .register {
+                margin-top:80px;
+                .btn-click {
+                    font-weight: 700;
+                    font-size:30px;
+                    text-transform: uppercase;
+                    color : white;
+
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    background-color: #fec503;
+                    border-color: #f6bf01;
+                }
+            }
+        }
+    }
+}
+
+section {
+    padding: 70px 0;
+    h2.section-heading {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    h3.section-subheading {
+        font-size: 16px;
+        @include serif-font;
+        text-transform: none;
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: 75px;
+    }
+}
+
+@media(min-width:768px) {
+    section {
+        padding: 70px 0;
+    }
+}
+
+
+
+section#contacts {
+    background-color: black;
+    color: white;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    li > a {
+        color: $yellow1;
+        @include sans-serif-font;
+        font-weight: 700;
+    }
+}
+
+
+div.speaker {
+    text-align:center;
+    img {
+        border: $yellow1 solid 5px;
+    }
 }
