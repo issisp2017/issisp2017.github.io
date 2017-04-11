@@ -1,19 +1,92 @@
 ---
 ---
-
 @import "variables.scss";
 @import "mixins.scss";
 
+// Global Components
+
 body {
-//    position: relative;
     overflow-x: hidden;
+    @include body-font;
 }
 
+.text-muted {
+    color: $gray-light;
+}
+
+.text-primary {
+    color: $theme-primary;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: none;
+}
+
+a {
+    color: $theme-primary;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: darken($theme-primary, 10%);
+}
+
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: $gray-lighter;
+}
+
+.bg-darkest-gray {
+    background-color: $gray-darker;
+}
+
+// Restyled Primary Buttons
+
+.btn-primary {
+    @include button-variant(white, $theme-primary, $theme-primary);
+    @include heading-font;
+    font-weight: 700;
+}
+
+.btn-xl {
+    @include button-variant(white, $theme-primary, $theme-primary);
+    @include heading-font;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+// Custom Navigation Bar
+
 .navbar-custom {
-    background-color: black;
+    background-color: $gray-darker;
     border-color: transparent;
+
     .navbar-brand {
         color: $theme-primary;
+        @include sans-serif-font;
+        font-weight: 800;
+
         &:hover,
         &:focus,
         &:active,
@@ -27,6 +100,7 @@ body {
     .navbar-toggle {
         background-color: $theme-primary;
         border-color: $theme-primary;
+        @include sans-serif-font;
         color: white;
         font-size: 12px;
         &:hover,
@@ -37,7 +111,8 @@ body {
     .nav {
         li {
             a {
-                font-weight: 400;
+                @include sans-serif-font;
+                font-weight: 700;
                 letter-spacing: 1px;
                 color: white;
                 &:hover,
@@ -60,11 +135,10 @@ body {
     }
 }
 
-
 @media(min-width:768px) {
     .navbar-custom {
-//        background-color: transparent;
-        padding: 10px 0;
+        background-color: transparent;
+        padding: 25px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
@@ -81,43 +155,13 @@ body {
     }
 }
 
+// Navbar Change on Scroll
+
 @media(min-width:768px) {
     .navbar-custom.affix {
-        background-color: black;
+        background-color: $gray-darker;
         padding: 10px 0;
-        .navbar-brand {
-            font-size: 1.5em;
-        }
     }
-}
-
-
-nav {
-    @include sans-serif-font;
-    font-weight: 800;
-}
-
-ul.nav > li > a {
-    @include sans-serif-font;
-    font-weight: 700;
-    color: #aaaaaa;
-}
-
-
-p {
-    font-size: 20px;
-    color: $fcolor;
-}
-
-img.chateau {
-    width:10%;
-}
-
-section {
-    h1 {
-        @include sans-serif-font;
-        font-weight: 700;
-       }
 }
 
 header {
@@ -125,13 +169,9 @@ header {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
-    @include sans-serif-font;
     @include background-cover;
-
-
     text-align: center;
     color: white;
-  //  min-height: 1000px;
 
     .intro {
         padding-top:150px;
@@ -173,12 +213,12 @@ header {
             }
         }
     }
-}
 
+}
 
 @media(min-width:768px) {
     header {
-        .intro {
+    .intro {
             padding-top:150px;
             padding-bottom: 50px;
 
@@ -217,12 +257,14 @@ header {
                     border-color: #f6bf01;
                 }
             }
-        }
+        }      
     }
 }
 
+// Global Section Styles
+
 section {
-    padding: 70px 0;
+    padding: 100px 0;
     h2.section-heading {
         font-size: 40px;
         margin-top: 0;
@@ -240,11 +282,199 @@ section {
 
 @media(min-width:768px) {
     section {
-        padding: 70px 0;
+        padding: 150px 0;
+    }
+}
+
+// Services Section
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+// Portfolio Section
+
+#portfolio {
+    .portfolio-item {
+        margin: 0 0 15px;
+        right: 0;
+        .portfolio-link {
+            display: block;
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto;
+            .portfolio-hover {
+                background: fade-out($theme-primary, .9);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all ease 0.5s;
+                -webkit-transition: all ease 0.5s;
+                -moz-transition: all ease 0.5s;
+                &:hover {
+                    opacity: 1;
+                }
+                .portfolio-hover-content {
+                    position: absolute;
+                    width: 100%;
+                    height: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                    top: 50%;
+                    margin-top: -12px;
+                    color: white;
+                    i {
+                        margin-top: -12px;
+                    }
+                    h3,
+                    h4 {
+                        margin: 0;
+                    }
+                }                
+            }            
+        }
+        .portfolio-caption {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            text-align: center;
+            padding: 25px;
+            h4 {
+                text-transform: none;
+                margin: 0;
+            }
+            p {
+                @include serif-font;
+                font-style: italic;
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+    }
+    * {
+        z-index: 2;
+    }
+}
+
+@media(min-width:767px) {
+    #portfolio {
+        .portfolio-item {
+            margin: 0 0 30px;
+        }
     }
 }
 
 
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: none;
+}
+
+.portfolio-modal {
+    .modal-dialog{
+        margin: 0;
+        height: 100%;
+        width: auto;
+    }
+    .modal-content {
+        border-radius: 0;
+        background-clip: border-box;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        min-height: 100%;
+        padding: 100px 0;
+        text-align: center;
+        h2 {
+            margin-bottom: 15px;
+            font-size: 3em;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        p.item-intro {
+            margin: 20px 0 30px;
+            @include serif-font;
+            font-style: italic;
+            font-size: 16px;
+        }
+        ul.list-inline {
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+        img {
+            margin-bottom: 30px;
+        }
+    }
+    .close-modal {
+        position: absolute;
+        width:75px;
+        height:75px;
+        background-color:transparent;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.3;
+        }
+        .lr {
+            height:75px;
+            width:1px;
+            margin-left:35px;
+            background-color:$gray-darker;
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            /* IE 9 */
+            -webkit-transform: rotate(45deg);
+            /* Safari and Chrome */
+            z-index:1051;
+            .rl {
+                height:75px;
+                width:1px;
+                background-color:$gray-darker;
+                transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                /* IE 9 */
+                -webkit-transform: rotate(90deg);
+                /* Safari and Chrome */
+                z-index:1052;
+            }            
+        }        
+    }
+    .modal-backdrop {
+        opacity: 0;
+        display: none;
+    }
+}
+
+// Highlight Color Customization
+
+::-moz-selection {
+    text-shadow: none;
+    background: $theme-primary;
+}
+
+::selection {
+    text-shadow: none;
+    background: $theme-primary;
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+body {
+    webkit-tap-highlight-color: $theme-primary;
+}
 
 section#contacts {
     background-color: black;
@@ -252,7 +482,7 @@ section#contacts {
     padding-bottom: 100px;
     padding-top: 30px;
     li > a {
-        color: $yellow1;
+        color: $theme-primary;
         @include sans-serif-font;
         font-weight: 700;
     }
@@ -262,6 +492,13 @@ section#contacts {
 div.speaker {
     text-align:center;
     img {
-        border: $yellow1 solid 5px;
+        border: $theme-primary solid 5px;
     }
+}
+
+section {
+    h1 {
+        @include sans-serif-font;
+        font-weight: 700;
+       }
 }
