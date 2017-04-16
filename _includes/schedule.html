@@ -10,26 +10,73 @@
     {% assign slots = site.data.slots %}
 
 
-    {% for entry in schedule %}
     <div class="row">
-      {{ entry.day | capitalize }}
-      <ul>
+      <ul class="nav nav-pills nav-justified">
+      {% for entry in schedule %}
+      {% assign day = entry.day %}
+
+        {% if forloop.first %}
+        <li class="active">
+          {% else %}
+        <li>
+          {% endif %}
+          <a data-toggle="pill" href="#{{ day }}">
+         {{ day | capitalize }}
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+
+      <div class="tab-content">
+        {% for entry in schedule %}
+        {% assign day = entry.day %}
+        {% if forloop.first %}
+        <div id="{{ day }}" class="tab-pane fade in active">
+          {% else %}
+        <div id="{{ day }}" class="tab-pane fade">
+          {% endif %}
+
+
         {% for c in entry.courses %}
         {% assign lecture = lectures[c.course] %}
         {% assign possible_teachers = teachers | where: "id", lecture.teacher %}
         {% assign teacher = possible_teachers[0] %}
         {% assign h = slots[c.slot] %}
-        <li>
-          <ul>
-            <li>{{ h.start }}--{{ h.end }}</li>
-            <li> {{ lecture.title }} </li>
-            <li>{{ teacher.firstname }} {{ teacher.lastname }} </li>
-          </ul>
-         </li>
+          <div class="entry">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="hour">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  {{ h.start }} &#8213; {{ h.end }}
+                </div>
+
+              </div>
+              <div class="col-md-10">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="row">
+                      <div class="col-md-8">
+                         <i class="fa fa-circle" aria-hidden="true"></i>
+                        {{ lecture.title }}
+                      </div>
+                      <div class="col-md-4">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        {{ teacher.firstname }} {{ teacher.lastname }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
         {% endfor %}
-      </ul>
+        </div>
+        {% endfor %}
+     </div>
     </div>
-    {% endfor %}
   </div>
 </div>
 
