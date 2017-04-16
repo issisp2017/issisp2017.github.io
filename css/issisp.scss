@@ -459,7 +459,7 @@ body {
 }
 
 section#contacts {
-    background-color: black;
+    background-color: $gray-darker;
     color: white;
     padding-bottom: 100px;
     padding-top: 30px;
@@ -487,8 +487,8 @@ section {
        }
 }
 
-ul.nav {
-    background-color: black;
+ul.nav-pills {
+    background-color: $gray-darker;
     color: white;
 }
 
@@ -522,20 +522,14 @@ ul.nav-pills>li.active>a:hover
 }
 
 div.entry {
-    padding-top: 10px;
-}
-
-
-.panel-default {
-    .panel-heading {
-        background-color: black;
-        color: white;
-        font-weight: 800;
-        font-size: 16px;
-    }
-}
-
-div.hour {
+    padding: 10px;
     font-weight: 800;
     font-size: 16px;
+
+    .teacher {
+    }
+
+    .nolecture {
+        color: lighten($gray-darker, 35%);
+    }
 }

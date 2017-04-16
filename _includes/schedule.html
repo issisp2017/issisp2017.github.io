@@ -43,31 +43,35 @@
         {% assign h = slots[c.slot] %}
           <div class="entry">
             <div class="row">
-              <div class="col-md-2">
+
+              <div class="col-xs-offset-1 col-xs-2 col-md-offset-1 col-md-2">
                 <div class="hour">
                   <i class="fa fa-clock-o" aria-hidden="true"></i>
                   {{ h.start }} &#8213; {{ h.end }}
                 </div>
-
               </div>
-              <div class="col-md-10">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="row">
-                      <div class="col-md-8">
-                         <i class="fa fa-circle" aria-hidden="true"></i>
-                        {{ lecture.title }}
-                      </div>
-                      <div class="col-md-4">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        {{ teacher.firstname }} {{ teacher.lastname }}
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                  </div>
-                </div>
 
+              <div class="col-xs-9 col-md-9">
+                <div class="row">
+                  {% if teacher %}
+                  <div class="col-xs-6 col-md-6 lecture">
+                    {% else %}
+                  <div class="col-xs-6 col-md-6 nolecture">
+                  {% endif %}
+                  {{ lecture.title }}
+                  {% if c.handson %}
+                  [hands-on]
+                  {% endif %}
+                  </div>
+                  {% if teacher %}
+                  <div class="col-xs-3 col-md-3 teacher">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <a href="{{ teacher.www }}">
+                      {{ teacher.firstname }} {{ teacher.lastname }}
+                    </a>
+                  </div>
+                  {% endif %}
+                </div>
               </div>
             </div>
           </div>

@@ -14,3 +14,22 @@ l4:
 lunch:
   start: "12:30"
   end: "14:00"
+
+break1:
+  start: "10:30"
+  end: "11:00"
+break2:
+  start: "15:30"
+  end: "16:00"
+
+panel:
+  start: "14:00"
+  end: "16:00"
+
+social:
+  start: "14:00"
+  end: "23:00"
+
+l5:
+  start: "18:00"
+  end: "19:30"

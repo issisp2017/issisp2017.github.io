@@ -4,10 +4,17 @@
   courses:
     - course: intro
       slot: l1
+    - course: break
+      slot: break1
     - course: intro
       slot: l2
+      handson: true
+    - course: lunch
+      slot: lunch
     - course: intro
       slot: l3
+    - course: break
+      slot: break2
     - course: intro
       slot: l4
 - day: tuesday
@@ -15,30 +22,53 @@
   courses:
     - course: waterfinger
       slot: l1
+    - course: break
+      slot: break1
     - course: desutter1
       slot: l2
+    - course: lunch
+      slot: lunch
     - course: desutter2
       slot: l3
+    - course: break
+      slot: break2
     - course: malware
       slot: l4
+    - course: poster
+      slot: l5
 - day: Wednesday
   date: 2017-07-19
   courses:
     - course: giacobazzi1
       slot: l1
+    - course: break
+      slot: break1
+
     - course: giacobazzi2
       slot: l2
+    - course: lunch
+      slot: lunch
+
     - course: pfm
       slot: l3
+    - course: break
+      slot: break2
     - course: malware
       slot: l4
+      handson: true
 - day: Thursday
   date: 2017-07-20
   courses:
     - course: dynprot
       slot: l1
+    - course: break
+      slot: break1
     - course: techx
       slot: l2
+    - course: lunch
+      slot: lunch
+    - course: social
+      slot: social
 - day: Friday
   date: 2017-07-21
   courses:
@@ -46,5 +76,7 @@
       slot: l1
     - course: fault_injection
       slot: l2
+    - course: lunch
+      slot: lunch
     - course: panel
-      slot: l3
+      slot: panel

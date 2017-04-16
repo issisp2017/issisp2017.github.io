@@ -51,3 +51,15 @@ fault_injection:
 panel:
   teacher: gu
   title: "Panel: Industrial Challenges"
+
+break:
+  title: "Coffee Break"
+
+lunch:
+  title: "Lunch"
+
+social:
+  title: "Social Event"
+
+poster:
+  title: "Poster Session"
