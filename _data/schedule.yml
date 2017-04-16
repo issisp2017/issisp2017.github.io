@@ -1,0 +1,45 @@
+---
+- day: Monday
+  courses:
+    - course: intro
+      slot: l1
+    - course: intro
+      slot: l2
+    - course: intro
+      slot: l3
+    - course: intro
+      slot: l4
+- day: tuesday
+  courses:
+    - course: waterfinger
+      slot: l1
+    - course: desutter1
+      slot: l2
+    - course: desutter2
+      slot: l3
+    - course: malware
+      slot: l4
+- day: Wednesday
+  courses:
+    - course: giacobazzi1
+      slot: l1
+    - course: giacobazzi2
+      slot: l2
+    - course: pfm
+      slot: l3
+    - course: malware
+      slot: l4
+- day: Thursday
+  courses:
+    - course: dynprot
+      slot: l1
+    - course: techx
+      slot: l2
+- day: Friday
+  courses:
+    - course: side_channel
+      slot: l1
+    - course: fault_injection
+      slot: l2
+    - course: panel
+      slot: l3

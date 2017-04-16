@@ -4,6 +4,32 @@
     <h1>Schedule</h1>
     <h3>Schedule will be available on April 22, 2017.</h3>
 
+    {% assign schedule = site.data.schedule %}
+    {% assign lectures = site.data.courses %}
+    {% assign teachers = site.data.people | where: "teacher", true %}
+    {% assign slots = site.data.slots %}
+
+
+    {% for entry in schedule %}
+    <div class="row">
+      {{ entry.day | capitalize }}
+      <ul>
+        {% for c in entry.courses %}
+        {% assign lecture = lectures[c.course] %}
+        {% assign possible_teachers = teachers | where: "id", lecture.teacher %}
+        {% assign teacher = possible_teachers[0] %}
+        {% assign h = slots[c.slot] %}
+        <li>
+          <ul>
+            <li>{{ h.start }}--{{ h.end }}</li>
+            <li> {{ lecture.title }} </li>
+            <li>{{ teacher.firstname }} {{ teacher.lastname }} </li>
+          </ul>
+         </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
   </div>
 </div>
 

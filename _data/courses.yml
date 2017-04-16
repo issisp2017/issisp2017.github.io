@@ -1,0 +1,53 @@
+---
+intro:
+  teacher: collberg
+  title: "General Introduction"
+
+waterfinger:
+  teacher: collberg
+  title: "Watermarking & Fingerprinting"
+
+pfm:
+  teacher: bardin
+  title: "Practical Formal Methods"
+
+giacobazzi1:
+  teacher: giacobazzi
+  title: "Code Attacks"
+
+giacobazzi2:
+  teacher: giacobazzi
+  title: "Code Attacks"
+
+malware:
+  teacher: lakhotia
+  title: "Malware Analysis"
+
+desutter1:
+  teacher: desutter
+  title: "Protection Evaluation"
+
+desutter2:
+  teacher: desutter
+  title: "Protection Evaluation"
+
+dynprot:
+  teacher: davidson
+  title: "Dynamic Protection"
+
+techx:
+  teacher: davidson
+  title: "TechX: CGC"
+
+side_channel:
+  teacher: courousse
+  title: "Side Channel Attacks"
+
+
+fault_injection:
+  teacher: lanet
+  title: "Fault injection"
+
+panel:
+  teacher: gu
+  title: "Panel: Industrial Challenges"
