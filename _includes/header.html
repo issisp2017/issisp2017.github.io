@@ -9,23 +9,28 @@
       </button>
       <a class="navbar-brand" href="#">ISSISP '17</a>
     </div>
-    
+
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="nav navbar-nav navbar-right">
         <li class="hidden">
           <a href="#page-top"></a>
         </li>
-
-        <li><a href="#speakers">Speakers      </a></li>
-        <li><a href="#schedule">Schedule      </a></li>
-        <li><a href="#registration">Registration  </a></li>
-        <li><a href="#cfp">Call for posters</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <!-- <li><a href="#location">Location      </a></li> -->
-        <li><a href="#contacts">Contacts      </a></li>
+        {% assign sections = site.data.sections %}
+        {% for sec in sections %}
+        {% if sec.in_menu %}
+        <li>
+          <a href="#{{ sec.name }}">
+            {% if sec.longname %}
+            {{ sec.longname }}
+            {% else %}
+            {{ sec.name | capitalize }}
+            {% endif %}
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
       </ul>
     </div>
-    
   </div>
 </nav>
 
