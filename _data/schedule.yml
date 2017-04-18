@@ -11,12 +11,13 @@
       handson: true
     - course: lunch
       slot: lunch
-    - course: intro
+    - course: basicexploit
       slot: l3
     - course: break
       slot: break2
-    - course: intro
+    - course: basicexploit
       slot: l4
+      handson: true
 - day: tuesday
   date: 2017-07-18
   courses:
@@ -63,7 +64,7 @@
       slot: l1
     - course: break
       slot: break1
-    - course: techx
+    - course: dynprot
       slot: l2
     - course: lunch
       slot: lunch
