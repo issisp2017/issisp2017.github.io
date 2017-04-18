@@ -9,7 +9,7 @@
     {% assign slots = site.data.slots %}
 
 
-    <div class="row">
+    <div class="row well">
       <ul class="nav nav-pills nav-justified">
       {% for entry in schedule %}
       {% assign day = entry.day %}
@@ -64,7 +64,7 @@
                   {% endif %}
                   </div>
                   {% if teacher %}
-                  <div class="col-xs-3 col-md-3 teacher">
+                  <div class="col-xs-4 col-md-4 teacher">
                     <i class="fa fa-user" aria-hidden="true"></i>
                     <a href="{{ teacher.www }}">
                       {{ teacher.firstname }} {{ teacher.lastname }}

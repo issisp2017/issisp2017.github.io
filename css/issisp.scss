@@ -524,7 +524,7 @@ ul.nav-pills>li.active>a:hover
 div.entry {
     padding: 10px;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 18px;
 
     .teacher {
     }
@@ -532,4 +532,19 @@ div.entry {
     .nolecture {
         color: lighten($gray-darker, 35%);
     }
+}
+
+
+div.well {
+    font-size: 16px;
+    border-color: $theme-primary;
+}
+
+div.alerted {
+    font-size: 18px;
+    padding: 20px;
+    border: $theme-primary solid 5px;
+    border-radius: 15px;
+    color: white;
+    background-color: $gray-darker;
 }

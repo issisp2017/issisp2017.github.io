@@ -36,7 +36,8 @@
         <h3>Past events</h3>
           <ul class="fa-ul">
             {% for e in events %}
-            <li><i class="fa-li fa fa-square"></i>
+            <li>
+              <i class="fa-li fa fa-square"></i>
               <a href="{{ e.url }}">ISSISP {{ e.year }}</a>, {{ e. location }}
             </li>
             {% endfor %}

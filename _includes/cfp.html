@@ -2,8 +2,104 @@
   <div class="container">
     <div class="row">
       <h1>Call for Posters</h1>
-      <h3>The Call for Posters will be available on April 24, 2017.</h3>
+      <p>
+        We encourage students, faculty, researchers and security practitioners
+        to submit their innovative ideas and ongoing project work in the area of
+        Cybersecurity and Privacy.
+      </p>
+
+      <p>
+        Proposals for posters are invited preferably on the areas in
+        Security and Privacy as listed below.
+        However, proposals for new and innovative research
+        in interdisciplinary areas, are also welcome.
+      </p>
+
+
+      <div class="well">
+        <ul class="fa-ul">
+          {% for entry in site.data.poster_themes %}
+          <li><i class="fa-li fa fa-square"></i>
+            {{ entry.title }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
 
+
+    <div class="row">
+      <h3>Submission Information</h3>
+      <div class="well">
+        Proposals
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-square"></i>
+            must contain the author(s) name, email ID,
+            college/institution/organization and contact information.</li>
+          <li><i class="fa-li fa fa-square"></i>
+            must include title, abstract and overview of the poster.
+          </li>
+          <li><i class="fa-li fa fa-square"></i>
+            are limited to 800 words</li>
+          <li><i class="fa-li fa fa-square"></i>
+            should not have been published previously.
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <h3>Important Dates</h3>
+      <div class="alerted">
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            Send submission by e-mail to
+          </div>
+          <div class="col-xs-6 col-md-6">
+            issisp2017@groupes.renater.fr
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            Submission Deadline
+          </div>
+          <div class="col-xs-6 col-md-6">
+            July 3 , 2017
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            Acceptance Notification
+          </div>
+          <div class="col-xs-6 col-md-6">
+            July 10, 2017
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <h3>Evaluation</h3>
+      <div class="well">
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-square"></i>
+            Authors of accepted proposals are asked to create a poster to
+            present their work at the 8th International
+            Summer School on Information Security and Protection.
+          </li>
+          <li><i class="fa-li fa fa-square"></i>
+            At least one person
+            per accepted poster must register for the
+            Summer School.
+          </li>
+          <li><i class="fa-li fa fa-square"></i>
+            Posters will be reviewed by an expert team on the basis of novelty
+            of theme, clarity of thought, articulation of problem/ solution
+            proposed and potential impact.
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
