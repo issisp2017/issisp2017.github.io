@@ -1,23 +1,27 @@
 ---
 intro:
   teacher: collberg
-  title: "General Introduction"
+  title: "Basic obfuscation"
 
 waterfinger:
   teacher: collberg
   title: "Watermarking & Fingerprinting"
 
+basicexploit:
+  teacher: desutter
+  title: "Exploitation & basic defenses"
+  
 pfm:
   teacher: bardin
   title: "Practical Formal Methods"
 
 giacobazzi1:
   teacher: giacobazzi
-  title: "Code Attacks"
+  title: "Foundations of obfuscation"
 
 giacobazzi2:
   teacher: giacobazzi
-  title: "Code Attacks"
+  title: "Obfuscation & static semantic analyses"
 
 malware:
   teacher: lakhotia
@@ -25,7 +29,7 @@ malware:
 
 desutter1:
   teacher: desutter
-  title: "Protection Evaluation"
+  title: "Anti-deobfuscation Techniques"
 
 desutter2:
   teacher: desutter
@@ -33,7 +37,7 @@ desutter2:
 
 dynprot:
   teacher: davidson
-  title: "Dynamic Protection"
+  title: "Advanced Software Protection"
 
 techx:
   teacher: davidson
@@ -41,12 +45,11 @@ techx:
 
 side_channel:
   teacher: courousse
-  title: "Side Channel Attacks"
-
+  title: "Side-channel Attacks"
 
 fault_injection:
   teacher: lanet
-  title: "Fault injection"
+  title: "Fault Injection"
 
 panel:
   teacher: gu
