@@ -4,31 +4,73 @@
   www: http://collberg.cs.arizona.edu
   affiliation: University of Arizona
   id: collberg
+  board: true
+  teacher: true
 
 - lastname: Giacobazzi
   firstname: Roberto
-  www: http://profs.sci.univr.it/~giaco
-  id: giacobazzi
-  affiliation: Università di Verona
-
-- lastname: Davidson
-  firstname: Jack
   www: https://www.cs.virginia.edu/people/faculty/davidson.html
-  id: davidson
+  id: giacobazzi
   affiliation: University of Virginia
+  board: true
+  teacher: true
 
 - lastname: De Sutter
   firstname: Bjorn
   www: http://users.elis.ugent.be/~brdsutte/
   id: desutter
   affiliation: Ghent University
+  board: true
+  teacher: true
 
 - lastname: Lakhotia
   firstname: Arun
   id: lakhotia
   affiliation: University of Lousiana
+  board: true
+  teacher: true
 
 - lastname: Gu
-  firstname: Yuang
+  firstname: Yuan Xiang
   id: gu
   affiliation: Irdeto
+  board: true
+  teacher: true
+
+- lastname: Davidson
+  firstname: Jack
+  id: davidson
+  affiliation: University of Virginia
+  www: http://www.google.com
+  board: true
+  teacher: true
+
+
+- lastname: Bardin
+  firstname: Sébastien
+  www: http://sebastien.bardin.free.fr
+  id: bardin
+  affiliation: CEA LIST
+  teacher: true
+  organizer: true
+
+- lastname: Bonichon
+  firstname: Richard
+  www: http://rbonichon.github.io
+  id: bonichon
+  affiliation: CEA LIST
+  organizer: true
+
+- lastname: Couroussé
+  firstname: Damien
+  id: courousse
+  affiliation: CEA LIST
+  teacher: true
+  www: http://damien.courousse.fr/
+
+- lastname: Lanet
+  firstname: Jean-Louis
+  id: lanet
+  affiliation: Université de Limoges
+  teacher: true
+  www: http://p.lanet.free.fr/pmwiki-2.2.81/

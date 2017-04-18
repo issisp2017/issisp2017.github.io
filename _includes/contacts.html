@@ -1,15 +1,15 @@
+{% assign sorted_board = site.data.people | where: "board", true | sort: "lastname" %}
+{% assign events = site.data.previous | sort:"-year" %}
+{% assign org = site.data.people | where: "organizer", true | sort: "lastname" %}
+
 <section id="contacts">
   <div class="container">
     <div class="row">
       <h1>Contacts</h1>
-      {% assign board = site.data.board | sort:"lastname"%}
-      {% assign events = site.data.previous | sort:"-year" %}
-      {% assign org = site.data.organizers %}
-
       <div class="col-md-4">
         <h3>Scientific advisory board</h3>
         <ul class="fa-ul">
-          {% for person in board %}
+          {% for person in sorted_board %}
           <li><i class="fa-li fa fa-square"></i>
             <a href="{{ person.www }}">{{ person.firstname }} {{ person.lastname }}</a>,
             {{ person.affiliation }}

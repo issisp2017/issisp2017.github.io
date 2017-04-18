@@ -1,0 +1,18 @@
+---
+- name: header
+  in_menu: false
+- name: descr
+  in_menu: false
+- name: speakers
+  in_menu: true
+- name: schedule
+  in_menu: true
+- name: registration
+  in_menu: true
+- name: cfp
+  longname: "Call for Posters"
+  in_menu: true
+- name: sponsors
+  in_menu: true
+- name: contacts
+  in_menu: true
