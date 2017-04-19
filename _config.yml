@@ -30,5 +30,6 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - resources
 sass:
     sass_dir: _sass
