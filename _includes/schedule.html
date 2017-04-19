@@ -9,7 +9,15 @@
     {% assign slots = site.data.slots %}
 
 
-    <div class="row well">
+    <div class="highlight">
+      <p>
+      The schedule below may still be subject to change.
+      Any change will be updated here.
+      </p>
+
+    </div>
+    
+    <div class="row">
       <ul class="nav nav-pills nav-justified">
       {% for entry in schedule %}
       {% assign day = entry.day %}
@@ -53,7 +61,7 @@
 
               <div class="col-xs-9 col-md-9">
                 <div class="row">
-                  {% if teacher %}
+                  {% if lecture.teacher %}
                   <div class="col-xs-6 col-md-6 lecture">
                     {% else %}
                   <div class="col-xs-6 col-md-6 nolecture">
@@ -63,12 +71,16 @@
                   [hands-on]
                   {% endif %}
                   </div>
-                  {% if teacher %}
+                  {% if lecture.teacher %}
                   <div class="col-xs-4 col-md-4 teacher">
+                    {% if teacher %}
                     <i class="fa fa-user" aria-hidden="true"></i>
                     <a href="{{ teacher.www }}">
                       {{ teacher.firstname }} {{ teacher.lastname }}
                     </a>
+                    {% else %}
+                    TBD
+                    {% endif %}
                   </div>
                   {% endif %}
                 </div>

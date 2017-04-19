@@ -548,3 +548,12 @@ div.alerted {
     color: white;
     background-color: $gray-darker;
 }
+
+div.highlight {
+    border: $gray-lighter solid 1px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: $theme-primary solid 10px;
+}
+

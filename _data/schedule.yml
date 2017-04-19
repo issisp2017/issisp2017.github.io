@@ -75,9 +75,14 @@
   courses:
     - course: side_channel
       slot: l1
+    - course: break
+      slot: break1
+
     - course: fault_injection
       slot: l2
     - course: lunch
       slot: lunch
     - course: panel
       slot: panel
+    - course: break
+      slot: lastbreak
