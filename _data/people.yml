@@ -6,14 +6,17 @@
   id: collberg
   board: true
   teacher: true
+  img: christian.png
 
+  
 - lastname: Giacobazzi
   firstname: Roberto
-  www: https://www.cs.virginia.edu/people/faculty/davidson.html
+  www: http://profs.sci.univr.it/~giaco/
   id: giacobazzi
-  affiliation: University of Virginia
+  affiliation: Universitá di Verona
   board: true
   teacher: true
+  img: roberto.png
 
 - lastname: De Sutter
   firstname: Bjorn
@@ -22,6 +25,7 @@
   affiliation: Ghent University
   board: true
   teacher: true
+  img: bjorn.jpg
 
 - lastname: Lakhotia
   firstname: Arun
@@ -29,6 +33,7 @@
   affiliation: University of Lousiana
   board: true
   teacher: true
+  img: arun.jpg
 
 - lastname: Gu
   firstname: Yuan Xiang
@@ -36,15 +41,16 @@
   affiliation: Irdeto
   board: true
   teacher: true
-
+  img: yuan.jpg
+  
 - lastname: Davidson
   firstname: Jack
   id: davidson
   affiliation: University of Virginia
-  www: http://www.google.com
+  www: https://www.cs.virginia.edu/people/faculty/davidson.html
   board: true
   teacher: true
-
+  img: jack.jpg
 
 - lastname: Bardin
   firstname: Sébastien
@@ -53,7 +59,8 @@
   affiliation: CEA LIST
   teacher: true
   organizer: true
-
+  img: sebastien.jpg
+  
 - lastname: Bonichon
   firstname: Richard
   www: http://rbonichon.github.io
@@ -67,10 +74,12 @@
   affiliation: CEA LIST
   teacher: true
   www: http://damien.courousse.fr/
-
+  img: damien.jpg
+  
 - lastname: Lanet
   firstname: Jean-Louis
   id: lanet
   affiliation: Université de Limoges
   teacher: true
   www: http://p.lanet.free.fr/pmwiki-2.2.81/
+  img: jll.jpg
