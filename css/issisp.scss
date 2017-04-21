@@ -174,23 +174,26 @@ header {
     color: white;
 
     .intro {
-        padding-top:150px;
+        padding-top: 75px;
         padding-bottom: 50px;
 
         .intro-title {
-            font-size: 90px;
-            line-height: 22px;
+            padding: 15px;
+            font-size: 55px;
+            line-height: 20px;
             margin-bottom: 55px;
             opacity: 1;
             font-weight: 700;
         }
         .intro-subtitle {
+            padding: 15px;
             font-weight: 700;
-            font-size: 50px;
+            font-size: 45px;
             line-height: 50px;
             margin-bottom: 35px;
         }
         .intro-information {
+            padding: 12px;
             p { font-size: 40px;
                 color : white;
                 font-weight: 700;
