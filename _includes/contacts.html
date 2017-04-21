@@ -4,23 +4,26 @@
 
 <section id="contacts" class="container-fluid">
   <div class="container">
-    <div class="row">
+  <div class="row">
+    <div class="col-md-12">
       <h1>Contacts</h1>
-      <div class="col-md-4">
-        <h3>Scientific advisory board</h3>
-        <ul class="fa-ul">
-          {% for person in sorted_board %}
-          <li><i class="fa-li fa fa-square"></i>
-            <a href="{{ person.www }}">{{ person.firstname }} {{ person.lastname }}</a>,
-            {{ person.affiliation }}
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
+    </div>
 
-      <div class="col-md-4">
-        <h3>Organization</h3>
-        <ul class="fa-ul">
+    <div class="col-sm-12 col-md-4">
+      <h3>Scientific advisory board</h3>
+      <ul class="fa-ul">
+        {% for person in sorted_board %}
+        <li><i class="fa-li fa fa-square"></i>
+          <a href="{{ person.www }}">{{ person.firstname }} {{ person.lastname }}</a>,
+          {{ person.affiliation }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <h3>Organization</h3>
+      <ul class="fa-ul">
         {% for person in org %}
         <li><i class="fa-li fa fa-square"></i>
           <a href="{{ person.www }}">{{ person.firstname }} {{ person.lastname }}</a>,
@@ -28,20 +31,21 @@
         </li>
         {% endfor %}
 
-        </ul>
-      </div>
-
-
-      <div class="col-md-4">
-        <h3>Past events</h3>
-          <ul class="fa-ul">
-            {% for e in events %}
-            <li>
-              <i class="fa-li fa fa-square"></i>
-              <a href="{{ e.url }}">ISSISP {{ e.year }}</a>, {{ e. location }}
-            </li>
-            {% endfor %}
-          </ul>
-      </div>
+      </ul>
     </div>
+
+
+    <div class="col-sm-12 col-md-4">
+      <h3>Past events</h3>
+      <ul class="fa-ul">
+        {% for e in events %}
+        <li>
+          <i class="fa-li fa fa-square"></i>
+          <a href="{{ e.url }}">ISSISP {{ e.year }}</a>, {{ e. location }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  </div>
 </section>
