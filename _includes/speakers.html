@@ -5,17 +5,16 @@
     </div>
 
     {% assign speakers = site.data.people | where: "teacher", "true" %}
-
     <div class="row">
-      {% for s in speakers %}
+    {% for s in speakers %}
 
-      <div class="speaker col-xs-4 col-md-4">
-        <div class="row">
-          <div class="col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3">
-            <img alt="" src="/assets/img/people/{{ s.img }}" class="img-responsive img-circle"/>
-          </div>
+      <div class="speaker col-sm-6 col-md-4">
+        <div class="picture col-sm-12 col-md-12">
+          <img alt="" src="/assets/img/people/{{ s.img }}" class="img-responsive img-circle"/>
         </div>
-        <div class="row">
+
+        <div class="col-sm-12 col-md-12">
+          {{ mod }}
           <h3>
             {% if s.www %}
           <a href="{{ s.www }}">
@@ -28,14 +27,9 @@
           <div class="affiliation">
             {{ s.affiliation }}
           </div>
-
         </div>
       </div>
-
-      
       {% endfor %}
-      
     </div>
-
   </div>
 </section>

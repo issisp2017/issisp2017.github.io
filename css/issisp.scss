@@ -477,6 +477,11 @@ div.speaker {
     img {
         border: $theme-primary solid 5px;
     }
+
+    div.picture {
+        padding-left: 20%;
+    }
+
 }
 
 section {
@@ -558,3 +563,10 @@ div.highlight {
     border-left: $theme-primary solid 10px;
 }
 
+
+div.date-elem {
+    padding: 5px;
+    div.bold {
+        font-weight: 800;
+    }
+}
