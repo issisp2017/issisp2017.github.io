@@ -7,6 +7,19 @@
   board: true
   teacher: true
   img: christian.png
+  descr: >
+    I'm an Associate Professor in the Department of Computer Science at the
+    University of Arizona. Prior to arriving in Tucson I worked at the University
+    of Auckland, New Zealand, and before that I got my Ph.D. from Lund University,
+    Sweden. I have also held a visiting position at the Chinese Academy of
+    Sciences in Beijing, China. My main research interest is computer security, in
+    particular the so-called Man-At-The-End Attack which occurs in settings where
+    an adversary has physical access to a device and compromises it by tampering
+    with its hardware or software. My current research focuses on remote
+    man-at-the-end attacks which occur in distributed systems where untrusted
+    clients are in frequent communication with trusted servers over a network, and
+    a malicious user can get an advantage by compromising an untrusted device.
+
 
 
 - lastname: Giacobazzi
@@ -16,7 +29,17 @@
   affiliation: Universitá di Verona
   board: true
   teacher: true
-  img: roberto_reworked.png
+  img: roberto.png
+  descr: >-
+    I am a full time Professor in the department of Computer Science at the
+    University of Verona, Italy. I earned my Ph.D. degree in Computer Science from
+    the University of Pisa in 1993.
+    My research interests are abstract interpretation, static program analysis,
+    semantics of programming languages, program verification, abstract
+    model-checking, program transformation and optimization, digital asset
+    protection, code obfuscation, software watermarking and lattice theory. In
+    lattice theory, I contributed to understanding of the structure of the lattice
+    of closure operators and complete congruence relations on complete lattices.
 
 - lastname: De Sutter
   firstname: Bjorn
@@ -76,6 +99,7 @@
   teacher: true
   www: http://damien.courousse.fr/
   img: damien.jpg
+
 
 - lastname: Lashermes
   firstname: Ronan

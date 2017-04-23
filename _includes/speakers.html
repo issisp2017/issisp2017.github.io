@@ -6,29 +6,66 @@
 
     {% assign speakers = site.data.people | where: "teacher", "true" %}
     <div class="row">
-    {% for s in speakers %}
-
+      {% for s in speakers %}
       <div class="speaker col-sm-6 col-md-4">
-        <div class="picture col-sm-12 col-md-12">
-          <img alt="" src="/assets/img/people/{{ s.img }}" class="img-responsive img-circle"/>
+        <a class="portfolio-link" data-toggle="modal" href="#{{ s.id }}">
+          <div class="picture col-sm-12 col-md-12">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-4x"></i>
+                {% if s.www %}
+                <a href="{{ s.www }}">
+                  <i class="fa fa-laptop fa-4x"> </i>
+                </a>
+                {% endif %}
+              </div>
+            </div>
+            <img lt="" src="/assets/img/people/{{ s.img }}" class="img-responsive img-circle"/>
+          </div>
+      </a>
+          <div class="col-sm-12 col-md-12">
+            <h3>
+              {% if s.www %}
+              <a href="{{ s.www }}">
+                {{ s.firstname }} {{ s.lastname }}
+              </a>
+              {% else %}
+              {{ s.firstname }} {{ s.lastname }}
+              {% endif %}
+            </h3>
+            <div class="affiliation">
+              {{ s.affiliation }}
+            </div>
+          </div>
         </div>
 
-        <div class="col-sm-12 col-md-12">
-          {{ mod }}
-          <h3>
-            {% if s.www %}
-          <a href="{{ s.www }}">
-            {{ s.firstname }} {{ s.lastname }}
-          </a>
-          {% else %}
-          {{ s.firstname }} {{ s.lastname }}
-          {% endif %}
-          </h3>
-          <div class="affiliation">
-            {{ s.affiliation }}
+
+    <div class="portfolio-modal modal fade" id="{{ s.id }}" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <p>
+                                      {{ s.descr }}
+                  </p>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+
       {% endfor %}
     </div>
   </div>

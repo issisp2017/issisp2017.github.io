@@ -269,6 +269,40 @@ header {
 
 // Portfolio Section
 
+.portfolio-hover {
+    background: fade-out($theme-primary, .9);
+    position: absolute;
+    width: 58%;
+    height: 100%;
+    opacity: 0;
+    border-radius:100px;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    &:hover {
+        background: $theme-primary;
+        opacity: 0.8;
+    }
+    .portfolio-hover-content {
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        font-size: 20px;
+        text-align: center;
+        top: 50%;
+        margin-top: -12px;
+        color: white;
+        i {
+            margin-top: -12px;
+            color: white;
+        }
+        h3,
+        h4 {
+            margin: 0;
+        }
+    }
+}
+
 #portfolio {
     .portfolio-item {
         margin: 0 0 15px;
@@ -278,36 +312,6 @@ header {
             position: relative;
             max-width: 400px;
             margin: 0 auto;
-            .portfolio-hover {
-                background: fade-out($theme-primary, .9);
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                opacity: 0;
-                transition: all ease 0.5s;
-                -webkit-transition: all ease 0.5s;
-                -moz-transition: all ease 0.5s;
-                &:hover {
-                    opacity: 1;
-                }
-                .portfolio-hover-content {
-                    position: absolute;
-                    width: 100%;
-                    height: 20px;
-                    font-size: 20px;
-                    text-align: center;
-                    top: 50%;
-                    margin-top: -12px;
-                    color: white;
-                    i {
-                        margin-top: -12px;
-                    }
-                    h3,
-                    h4 {
-                        margin: 0;
-                    }
-                }
-            }
         }
         .portfolio-caption {
             max-width: 400px;
