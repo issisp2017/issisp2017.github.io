@@ -541,7 +541,7 @@ div.mywell {
     padding-left: 19px;
 }
 
-div.alerted {f
+div.alerted {
     font-size: 18px;
     padding: 20px;
     border: $theme-primary solid 1px;
@@ -585,4 +585,10 @@ div.date-elem {
 
 .back-to-top i {
   font-size: 40px;
+}
+
+
+hr {
+    color: $theme-primary;
+    border-top-color: $theme-primary;
 }
