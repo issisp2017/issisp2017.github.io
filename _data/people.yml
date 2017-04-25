@@ -16,7 +16,7 @@
   affiliation: Universitá di Verona
   board: true
   teacher: true
-  img: roberto.png
+  img: roberto_reworked.png
 
 - lastname: De Sutter
   firstname: Bjorn
@@ -39,6 +39,7 @@
   firstname: Yuan Xiang
   id: gu
   affiliation: Irdeto
+  www: https://irdeto.com
   board: true
   teacher: true
   img: yuan.jpg

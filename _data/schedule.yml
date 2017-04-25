@@ -83,6 +83,8 @@
     - course: lunch
       slot: lunch
     - course: panel
-      slot: panel
+      slot: panel1
     - course: break
       slot: lastbreak
+    - course: panel
+      slot: panel2
