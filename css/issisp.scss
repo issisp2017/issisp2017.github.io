@@ -179,6 +179,7 @@ header {
         padding-bottom: 50px;
 
         .intro-title {
+            @include sans-serif-font;
             padding: 15px;
             font-size: 55px;
             line-height: 20px;
