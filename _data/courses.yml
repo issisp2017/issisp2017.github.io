@@ -10,7 +10,7 @@ waterfinger:
 basicexploit:
   teacher: tbd
   title: "Exploitation & basic defenses"
-  
+
 pfm:
   teacher: bardin
   title: "Practical Formal Methods"
@@ -48,7 +48,7 @@ side_channel:
   title: "Side-channel Attacks"
 
 fault_injection:
-  teacher: lanet
+  teacher: ronan
   title: "Fault Injection"
 
 panel:

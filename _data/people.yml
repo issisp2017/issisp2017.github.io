@@ -8,7 +8,7 @@
   teacher: true
   img: christian.png
 
-  
+
 - lastname: Giacobazzi
   firstname: Roberto
   www: http://profs.sci.univr.it/~giaco/
@@ -43,7 +43,7 @@
   board: true
   teacher: true
   img: yuan.jpg
-  
+
 - lastname: Davidson
   firstname: Jack
   id: davidson
@@ -61,7 +61,7 @@
   teacher: true
   organizer: true
   img: sebastien.jpg
-  
+
 - lastname: Bonichon
   firstname: Richard
   www: http://rbonichon.github.io
@@ -76,17 +76,10 @@
   teacher: true
   www: http://damien.courousse.fr/
   img: damien.jpg
-  
-- lastname: Lanet
-  firstname: Jean-Louis
-  id: lanet
-  affiliation: Université de Limoges
-  teacher: true
-  www: http://p.lanet.free.fr/pmwiki-2.2.81/
-  img: jll.jpg
 
 - lastname: Lashermes
   firstname: Ronan
-  id: lashermes
+  id: ronan
   affiliation: Université de Limoges
-
+  teacher: true
+  img: ronan.png
