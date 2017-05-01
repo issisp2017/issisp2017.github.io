@@ -4,8 +4,9 @@
       <h1>Sponsors</h1>
     </div>
 
+    {% assign sponsors = site.data.sponsors | sort:"sum" | reverse %}
     <div class="row">
-      {% for s in site.data.sponsors %}
+      {% for s in sponsors %}
 
       <div class="col-md-4 col-xs-4 center-block">
         <a href="{{ s.url }}">
