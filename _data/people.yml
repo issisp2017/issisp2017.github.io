@@ -7,7 +7,7 @@
   board: true
   teacher: true
   img: christian.png
-  descr: >
+  descr: >-
     I'm an Associate Professor in the Department of Computer Science at the
     University of Arizona. Prior to arriving in Tucson I worked at the University
     of Auckland, New Zealand, and before that I got my Ph.D. from Lund University,
@@ -31,16 +31,28 @@
   teacher: true
   img: roberto.png
   descr: >-
-    I am a full time Professor in the department of Computer Science at the
-    University of Verona, Italy. I earned my Ph.D. degree in Computer Science from
-    the University of Pisa in 1993.
-    My research interests are abstract interpretation, static program analysis,
-    semantics of programming languages, program verification, abstract
-    model-checking, program transformation and optimization, digital asset
-    protection, code obfuscation, software watermarking and lattice theory. In
-    lattice theory, I contributed to understanding of the structure of the lattice
-    of closure operators and complete congruence relations on complete lattices.
+    Roberto Giacobazzi was born in 1964 in Modena, Italy. He received the Laurea
+    degree in Computer Science in 1988 from the University 
+    of Pisa, and in 1993 he received the Ph.D. in Computer Science from the same university. From 1993 to 1995 he had a Post Doctoral
+    Research position at Laboratoire d'Informatique (LIX), Ecole Polytechnique (Paris) in the equipe Cousot. From 1995 to 1998 he was
+    (tenured) Assistant Professor in Computer Science at the University of Pisa. From 1998 to 2000 he was Associate Professor at the
+    University of Verona. From May 2000 until now he is Full Professor in Computer Science at the University of Verona. 
+    The research interests of Roberto Giacobazzi include abstract interpretation, static program analysis, semantics of programming
+    languages, program verification, abstract model-checking, program transformation and optimization, digital asset protection, code
+    obfuscation, software watermarking and lattice theory.
 
+  abstract: >-
+    In this course I will introduce the basics of code obfuscation starting from
+    its formal definition towards the impossibility result 
+    on universal Virtual-Black Box obfuscation of a generic Turing Machine. We
+    then see how to weaken this result in order to have 
+    possibility results for restricted models of attack to SW systems as
+    specified as automatic program analysis tools and algorithms. 
+    We will see through some examples how obfuscation can become possible
+    against an attacker specified as an interpreter and how 
+    virtualisation provides the best strategy to protect your code against automated program analysis.
+
+    
 - lastname: De Sutter
   firstname: Bjorn
   www: http://users.elis.ugent.be/~brdsutte/
@@ -57,6 +69,12 @@
   board: true
   teacher: true
   img: arun.jpg
+  descr: >-
+     I am a full time Professor in the department of Computer Science,
+     University at Louisiana, Lafayette, USA. I earned my Ph.D. degree in C
+     omputer Science from the Case Western Reserve University in 199 0. 
+
+     My research interests are malware analysis and autonomous vehicles 
 
 - lastname: Gu
   firstname: Yuan Xiang
@@ -107,3 +125,25 @@
   affiliation: INRIA Rennes
   teacher: true
   img: ronan.png
+  descr: >
+    Ronan Lashermes is a postdoctoral researcher at INRIA Rennes, in the LHS
+    lab. Engineer from Grenoble-INP Phelma, after finishing a Ph.D. with the CEA
+    and the UVSQ in 2014, he worked in a startup to develop physical attack
+    benches for devices evaluation. He later joined INRIA and the LHS lab for a
+    postdoc on fault attacks. 
+    He is interested in the security of embedded systems and hardware components
+    and how the abstraction barriers (mathematics/software, hardware/software) can
+    be exploited to compromise a device. 
+  abstract: >
+    What happens if your program is not executed as it should, if some instructions are not executed?
+    Here comes the world of fault injection attacks, where all your assumptions
+    on the adversary's capabilities tumble down. 
+    Fault attacks have mainly been used to break cryptographic algorithms in the
+    past, but we will see how they can also be used in relation with software
+    attacks against embedded systems (Phones, IoT, set-top boxes...). 
+    Of course, what we can do to protect ourselves will be discussed as well as
+    the impact of modern technologies (complex SoC, TrustZone, ...). 
+    Finally, we will try to analyze some pieces of software to spot
+    vulnerabilities wrt fault attacks and discuss what can be automated by tools
+    and what would be hard to achieve automatically.  
+
