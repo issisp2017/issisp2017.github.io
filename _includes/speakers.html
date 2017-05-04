@@ -7,55 +7,84 @@
     {% assign speakers = site.data.people | where: "teacher", "true" %}
     <div class="row">
       {% for s in speakers %}
-      <div class="speaker col-sm-6 col-md-4">
-        <a class="portfolio-link" data-toggle="modal" href="#{{ s.id }}">
-          <div class="picture col-sm-12 col-md-12">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-4x"></i>
-                {% if s.www %}
-                <a href="{{ s.www }}">
-                  <i class="fa fa-laptop fa-4x"> </i>
-                </a>
-                {% endif %}
-              </div>
-            </div>
-            <img lt="" src="/assets/img/people/{{ s.img }}" class="img-responsive img-circle"/>
-          </div>
-      </a>
-          <div class="col-sm-12 col-md-12">
-            <h3>
-              {% if s.www %}
-              <a href="{{ s.www }}">
-                {{ s.firstname }} {{ s.lastname }}
-              </a>
-              {% else %}
-              {{ s.firstname }} {{ s.lastname }}
-              {% endif %}
-            </h3>
-            <div class="affiliation">
-              {{ s.affiliation }}
-            </div>
-          </div>
-        </div>
+      <div class="speaker col-xs-12 col-sm-6 col-md-4">
+        <img alt="{{ s.firstname }}" src="/assets/img/people/{{ s.img }}"
+             class="myimg img-responsive img-circle"/>
+        <h4>
+          {% if s.www %}
+          <a href="{{ s.www }}">
+            {{ s.firstname }} {{ s.lastname }}
+          </a>
+          {% else %}
+          {{ s.firstname }} {{ s.lastname }}
+          {% endif %}
+        </h4>
+        <p class="text-muted">
+          {{ s.affiliation }}
+        </p>
+        <a class="speaker-details" data-toggle="modal" href="#{{ s.id }}">
+          <i class="fa fa-plus fa-2x" aria-hidden="true"
+             title="More about {{ s.firstname }}"></i>
+        </a>
+      </div>
 
 
-    <div class="portfolio-modal modal fade" id="{{ s.id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="speaker-modal modal fade" id="{{ s.id }}" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl">
+          <div class="modal-header">
+            <div class="row">
+              <div class="col-md-1 col-md-push-8 col-xs-12 xclose">
+                <a type="button" data-dismiss="modal"
+                   aria-label="Close">
+                  <i class="fa fa-times-circle fa-4x" aria-hidden="true"
+                     title="Close"></i>
+                </a>
+              </div>
+
+              <div class="col-md-8 col-md-pull-1 col-xs-12">
+                <h1>{{ s.firstname }} {{ s.lastname }}</h1>
               </div>
             </div>
-          </div>
+
+      </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
+              <div class="col-md-9 col-md-offset-1">
                 <div class="modal-body">
-                  <p>
-                                      {{ s.descr }}
-                  </p>
+                  <div class="row">
+
+                    <div class="col-md-3">
+                      <img alt="{{ s.firstname }}" src="/assets/img/people/{{ s.img }}"
+                           class="myimg img-responsive img-circle"/>
+                      <div class="links">
+                        {% if s.www %}
+                      <a href="{{ s.www }}">
+                        <i class="fa fa-2x fa-home" aria-hidden="true"
+                           title="Homepage"></i>
+                      </a>
+                      {% endif %}
+
+                      </div>
+
+                    </div>
+                    <div class="col-md-9">
+                      {% if s.descr %}
+                      <h3>Bio</h3>
+                      <p class="bio">
+                        {{ s.descr }}
+                      </p>
+                      {% endif %}
+
+                      {% if s.abstract %}
+                      <h3>Course abstract</h3>
+                      <p class="abstract">
+                        {{ s.abstract }}
+                      </p>
+                      {% endif %}
+                    </div>
+                  </div>
+                  
 
                 </div>
               </div>
