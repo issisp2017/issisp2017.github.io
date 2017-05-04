@@ -477,3 +477,11 @@ hr {
     color: $theme-primary;
     border-top-color: $theme-primary;
 }
+
+div.sponsor {
+    img {
+        width: auto;
+        max-height:150px;
+        margin-bottom: 20px;
+    }
+}
