@@ -4,7 +4,7 @@
       <h1>Sponsors</h1>
     </div>
 
-    {% assign sponsors = site.data.sponsors | sort:"sum" | reverse %}
+    {% assign sponsors = site.data.sponsors | sort:"priority" | reverse %}
     <div class="row">
       {% for s in sponsors %}
 
