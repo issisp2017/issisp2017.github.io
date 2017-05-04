@@ -104,6 +104,6 @@
 - lastname: Lashermes
   firstname: Ronan
   id: ronan
-  affiliation: Université de Limoges
+  affiliation: INRIA Rennes
   teacher: true
   img: ronan.png
