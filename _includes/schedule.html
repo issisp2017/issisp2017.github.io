@@ -1,12 +1,11 @@
 <section id="schedule" class="container">
-  <div class="container">
-  <div class="row" id="schedule">
+  <div class="row">
     <h1>Schedule</h1>
   </div>
-    {% assign schedule = site.data.schedule %}
-    {% assign lectures = site.data.courses %}
-    {% assign teachers = site.data.people | where: "teacher", true %}
-    {% assign slots = site.data.slots %}
+  {% assign schedule = site.data.schedule %}
+  {% assign lectures = site.data.courses %}
+  {% assign teachers = site.data.people | where: "teacher", true %}
+  {% assign slots = site.data.slots %}
 
 
   <div class="row alert alerted">
@@ -17,56 +16,56 @@
   </div>
 
   <div class="row">
-      <ul class="nav nav-pills nav-justified">
+    <ul class="nav nav-pills nav-justified">
       {% for entry in schedule %}
       {% assign day = entry.day %}
 
-        {% if forloop.first %}
-        <li class="active">
-          {% else %}
-        <li>
-          {% endif %}
-          <a data-toggle="pill" href="#{{ day }}">
-            {{ entry.date | date: "%B %d" }}
-          </a>
-        </li>
+      {% if forloop.first %}
+      <li class="active">
+        {% else %}
+      <li>
+        {% endif %}
+        <a data-toggle="pill" href="#{{ day }}">
+          {{ entry.date | date: "%B %d" }}
+        </a>
+      </li>
       {% endfor %}
-      </ul>
+    </ul>
 
-      <div class="tab-content">
-        {% for entry in schedule %}
-        {% assign day = entry.day %}
-        {% if forloop.first %}
-        <div id="{{ day }}" class="tab-pane fade in active">
-          {% else %}
+    <div class="tab-content">
+      {% for entry in schedule %}
+      {% assign day = entry.day %}
+      {% if forloop.first %}
+      <div id="{{ day }}" class="tab-pane fade in active">
+        {% else %}
         <div id="{{ day }}" class="tab-pane fade">
           {% endif %}
 
 
-        {% for c in entry.courses %}
-        {% assign lecture = lectures[c.course] %}
-        {% assign possible_teachers = teachers | where: "id", lecture.teacher %}
-        {% assign teacher = possible_teachers[0] %}
-        {% assign h = slots[c.slot] %}
+          {% for c in entry.courses %}
+          {% assign lecture = lectures[c.course] %}
+          {% assign possible_teachers = teachers | where: "id", lecture.teacher %}
+          {% assign teacher = possible_teachers[0] %}
+          {% assign h = slots[c.slot] %}
           <div class="row entry">
-              <div class="col-sm-12 col-md-offset-2 col-md-2">
-                <div class="hour">
-                  <i class="fa fa-clock-o" aria-hidden="true"></i>
-                  {{ h.start }} &#8213; {{ h.end }}
-                </div>
+            <div class="col-sm-12 col-md-offset-2 col-md-2">
+              <div class="hour">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                {{ h.start }} &#8213; {{ h.end }}
               </div>
+            </div>
 
-              <div class="col-sm-12 col-md-8">
-                <div class="row">
-                  {% if lecture.teacher %}
-                  <div class="col-sm-12 col-md-6 lecture">
-                    {% else %}
+            <div class="col-sm-12 col-md-8">
+              <div class="row">
+                {% if lecture.teacher %}
+                <div class="col-sm-12 col-md-6 lecture">
+                  {% else %}
                   <div class="col-sm-12 col-md-6 nolecture">
-                  {% endif %}
-                  {{ lecture.title }}
-                  {% if c.handson %}
-                  [hands-on]
-                  {% endif %}
+                    {% endif %}
+                    {{ lecture.title }}
+                    {% if c.handson %}
+                    [hands-on]
+                    {% endif %}
                   </div>
                   {% if lecture.teacher %}
                   <div class="col-sm-12 col-md-6 teacher">
@@ -82,12 +81,10 @@
                   {% endif %}
                 </div>
               </div>
-              </div>
-        {% endfor %}
+            </div>
+            {% endfor %}
+          </div>
+          {% endfor %}
         </div>
-        {% endfor %}
-     </div>
-    </div>
-</div>
-
+      </div>
 </section>

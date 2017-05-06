@@ -256,20 +256,14 @@ header {
 p.bio {
     text-align: left;
 }
+
 @media(min-width:768px) {
-    section {
+    
+    div#intro, section {
         padding: 50px 0;
     }
 }
 
-// Services Section
-
-.service-heading {
-    margin: 15px 0;
-    text-transform: none;
-}
-
-// Portfolio Section
 
 .myimg {
     margin: 0 auto;
@@ -361,6 +355,7 @@ div.speaker {
 
 }
 
+div#intro,
 section {
     h1 {
         @include sans-serif-font;
