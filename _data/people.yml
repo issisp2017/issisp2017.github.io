@@ -102,7 +102,21 @@
   teacher: true
   organizer: true
   img: sebastien.jpg
+  descr: >-
+    Sébastien Bardin joined CEA LIST, France, in 2006 as a full-time
+    researcher, with research activities centered on program analysis and
+    automatic software verification. For a few years now, Sébastien has been
+    interested in automating software-level security analysis by lifting
+    formal methods developed for the safety-critical industry. More
+    especially, he focuses on binary-level formal methods, vulnerability
+    detection & assessment, and malware deobfuscation. He leads the
+    "binary-level security" group at CEA LIST as well as several related
+    research projects, and he is one of the main designers of the
+    (open-source) BINSEC platform for binary-level code analysis. Sébastien
+    Bardin obtained his PhD in 2005 at ENS Cachan, France, in the field of
+    formal methods.
 
+  
 - lastname: Bonichon
   firstname: Richard
   www: http://rbonichon.github.io
