@@ -2,10 +2,10 @@
 
 - logo: digicosme.png
   name: DigiCosme
-  priority: 2000
+  priority: 2
   url: https://digicosme.lri.fr/
 
 - logo: list.svg
   name: CEA LIST
-  priority: 5000
+  priority: 5
   url: http://www-list.cea.fr/en/
