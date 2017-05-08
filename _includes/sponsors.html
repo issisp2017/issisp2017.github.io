@@ -1,20 +1,18 @@
 <section id="sponsors" class="container">
-  <div class="container">
-    <div class="row">
-      <h1>Sponsors</h1>
-    </div>
+  <div class="row">
+    <h1>Sponsors</h1>
+  </div>
 
-    {% assign sponsors = site.data.sponsors | sort:"priority" | reverse %}
-    <div class="row">
-      {% for s in sponsors %}
+  {% assign sponsors = site.data.sponsors | sort:"priority" | reverse %}
+  <div class="row">
+    {% for s in sponsors %}
 
-      <div class="col-md-4 col-xs-12 center-block sponsor">
-        <a href="{{ s.url }}">
-          <img class="img-responsive"
-               alt="{{ s.name }}" src="/assets/img/logo/{{ s.logo }}"/>
-        </a>
-      </div>
-      {% endfor %}
+    <div class="col-md-4 col-xs-12 center-block sponsor">
+      <a href="{{ s.url }}">
+        <img class="img-responsive"
+             alt="{{ s.name }}" src="/assets/img/logo/{{ s.logo }}"/>
+      </a>
     </div>
+    {% endfor %}
   </div>
 </section>
