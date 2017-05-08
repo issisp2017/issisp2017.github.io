@@ -9,3 +9,8 @@
   name: CEA LIST
   priority: 5
   url: http://www-list.cea.fr/en/
+
+- logo: irdeto-purple.png
+  name: Irdeto
+  priority: 1
+  url: https://irdeto.com
