@@ -337,6 +337,9 @@ section#contacts {
     color: white;
     padding-bottom: 100px;
     padding-top: 30px;
+    li {
+        font-size: 14px;
+    }
     li > a {
         color: $theme-primary;
         @include sans-serif-font;
