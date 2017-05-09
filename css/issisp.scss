@@ -365,6 +365,10 @@ section {
        }
 }
 
+
+p > li  {
+    font-size: 20px;
+}
 ul.nav-pills {
     background-color: $gray-darker;
     color: white;
@@ -480,4 +484,8 @@ div.sponsor {
         max-height:150px;
         margin-bottom: 20px;
     }
+}
+
+h3, h5 {
+    font-weight: 700;
 }
