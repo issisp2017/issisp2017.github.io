@@ -131,6 +131,25 @@
   teacher: true
   www: http://damien.courousse.fr/
   img: damien.jpg
+  descr: >-
+    Damien Couroussé is a research engineer at CEA (Commissariat à l’Énergie
+    Atomique et aux Énergies Renouvelables) since 2011. He received his PhD
+    degree in 2008 a PhD from INPG (Institut National Polytechnique de
+    Grenoble) in Engineering of Cognition Creation and Learning, working on
+    embedded computing architectures for virtual reality and mutisensory
+    systems, and spent two years in the industry at Logica CMG as an expert
+    in Linux and embedded systems. His research works focus on compilation
+    and runtime code generation for performance and cybersecurity. He has
+    contributed to several European collaborative projects, and is
+    coordinator of the COGITO project (ANR INS 2013).
+  abstract: >-
+    In this course we will focus on side channel attacks.  We will first
+    show how and why these attacks are powerful and effective, especially
+    against embedded devices.  We will present the main principles of
+    countermeasures currently used in secured systems, and discuss the
+    metrics for measuring the effectiveness of such countermeasures.  As
+    time permits, we will discuss at the end of the course solutions to
+    automate the applications of such countermeasures at the software level.
 
 
 - lastname: Lashermes
