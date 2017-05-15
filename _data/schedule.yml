@@ -82,7 +82,7 @@
       slot: l2
     - course: lunch
       slot: lunch
-    - course: panel
+    - course: ind_lecture
       slot: panel1
     - course: break
       slot: lastbreak

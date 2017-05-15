@@ -51,6 +51,10 @@ fault_injection:
   teacher: ronan
   title: "Fault Injection"
 
+ind_lecture:
+  teacher: gu
+  title: "The Industrial Challenge in Software and Information Protection"
+
 panel:
   teacher: gu
   title: "Panel: Industrial Challenges"

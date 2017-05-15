@@ -84,7 +84,60 @@
   board: true
   teacher: true
   img: yuan.jpg
+  descr: >-
+    Mr. Gu was the co-founder of Cloakware Corporation that. In 2007, Cloakware
+    was acquired by Irdeto. Since then, as a chief architect and a senior research
+    director of Irdeto, Mr. Gu is also leading the development of next generation
+    Cloakware technology, and research 
+    collaboration with research communities worldwide. Mr. Gu has been invited
+    and visited over 40 universities and research institutes in North American,
+    Europe and Asia, and organizing international security forums (workshops,
+    summer schools, and association) and 
+    becomes an active speaker at many international conferences and workshops to
+    promote software security and protection. Mr. Gu was invited being a guest
+    professor of Northwest University in China. As a native Chinese, Mr. Gu often
+    represents Irdeto to involve many 
+    business development and research collaboration activities in China.
 
+    Prior to joining Cloakware, Mr. Gu has worked as a senior scientist and
+    architect at Nortel Networks. Previously, Mr. Gu was a visiting professor at
+    the Computer Science School of McGill University at Montreal of Canada between
+    1988-1990. Before relocated to Canada,  Mr. Gu was a professor in the
+    Computer Science Department at Northwest University in China. Mr. Gu
+    received the First Outstanding Young Scientists Foundation Award from the
+    Chinese Academy of Sciences in 1985, and has about four decades of software
+    research and development knowledge and expertise, and has published more
+    than two dozens of patents and patent applications.
+
+  abstract: >-
+    No matter for business use or personal use, un-trusted environments have
+    more dominated in digital world from consumer devices to home networks, to
+    the public Internet, to the cloud and web services, and to the Internet of
+    Things, where traditional security 
+    models are inadequate to address emerging threat models and attacks. The
+    wireless connectivity quickly gains in popularity in recent years and
+    provides anything/anytime/anywhere connection to playing contents, e-mail,
+    instant messaging, online gaming and shopping, 
+    mobile banking, mobile payment, weather and travel information, connected
+    and autonomous vehicles and much more of other digital services. All of
+    these makes white-box security and digital asset protection much more
+    challenging. This course describes and discusses  
+    white-box software attack scenarios and security patterns (that are abstracted 
+    from many application domains in terms of use cases, v ulnerability and
+    threat analysis, and security solutions), the security lifecycle of digital
+    asset application mandating protection 
+    from creation, through distribution and then ultimately consumption from
+    being deployed in the field. Also, we introduce homomorphic obfuscation
+    technology and detail certain currently software protection technologies in
+    markets as a guide to the state of the art including. 
+
+    This course is structured in two sessions: 1) a course lecture; 2) a panel
+    to host a group of industrial experts to present, discuss and explore some
+    most interesting software and information protection issues in emerging
+    markets. 
+
+
+  
 - lastname: Davidson
   firstname: Jack
   id: davidson
