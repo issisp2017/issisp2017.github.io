@@ -10,6 +10,11 @@
   priority: 5
   url: http://www-list.cea.fr/en/
 
+- logo: tob_logo.png
+  name: Trail of Bits
+  priority: 5
+  url: https://www.trailofbits.com
+
 - logo: acm.png
   name: ACM
   priority: 1
