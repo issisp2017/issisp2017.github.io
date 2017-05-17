@@ -165,7 +165,35 @@
   board: true
   teacher: true
   img: jack.jpg
+  descr: >-
+     I am Professor of Computer Science at the University of Virginia. I
+     received my Ph.D. from the University of Arizona in 1981 and 
+     joined the University of Virginia in 1982. Over the years, I have worked in
+     many areas including compilers, embedded systems, high-performance
+     computing, and computer security. My current research foci is on software
+     protection and computer security. In the 
+     area of software security, my group has developed dynamic methods to
+     prevent adversaries from compromising intellectual property.  
+     In the area of computer security, we have developed methods for "hardening"
+     binaries to make them impervious to cyber attack. In 
+     2014–2016, I lead a team at the University of Virginia that competed in the
+     DARPA Cyber Grand Challenge (CGC)—a contest to build an 
+     autonomous supercomputer to automatically analyze vulnerable binaries and
+     patch them—all without human intervention. Our entry, produced in
+     collaboration with Grammatech, Inc., finished second winning a $1M prize.  I
+     am also leading a DARPA project, "Double Helix: High Assurance N-variant
+     Systems." Double Helix is a binary analysis and transformation system that
+     processes binary 
+     applications and produces variants with diverse binary structures that are
+     intended to be deployed within a multi-variant system. A 
+     unique aspect of Double Helix is that it employs structured diversity to
+     guarantee that variants behave differently yielding 
+     high-assurance systems.  Both CGC and Double Helix rely on high-precision
+     binary analysis and rewriting to reverse engineer and 
+     transform binaries.
 
+
+  
 - lastname: Bardin
   firstname: Sébastien
   www: http://sebastien.bardin.free.fr
