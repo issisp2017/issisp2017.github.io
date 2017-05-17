@@ -61,6 +61,25 @@
   board: true
   teacher: true
   img: bjorn.jpg
+  descr: >-
+     Bjorn De Sutter is associate professor in the Computer Systems Lab at the
+     Faculty of Engineering and Architecture of Ghent University. He got both
+     his MSc and his PhD from Ghent University in 1997 resp. 2002. Amongst others,
+     he teaches courses on Compilers, and on Software Hacking and Protection,
+     which are also his major research interests. The focus of his compiler 
+     technology research is on increasing the productivity of programmers by
+     automating necessary tasks for non-functional requirements, 
+     incl. the protection of software against all kinds of attacks. His more
+     than 80 peer-reviewed publications cover protections 
+     against fault injection attacks, against tampering attacks, against reverse
+     engineering attacks, against memory exploit attacks, 
+     against patch-based attacks, and against timing side channel attacks. He
+     coordinated the EU FP7 STREP ASPIRE (Advanced Software 
+     Protection: Integration, Research, and Exploitation), which was evaluated
+     by the EC as excellent in Feb. 2017, and participated in 
+     numerous other national and international projects. He received the Annual FWO Barco Award in 1998 for his Master thesis, and is
+     the recipient of a 2013 HiPEAC Technology Transfer Award.
+
 
 - lastname: Lakhotia
   firstname: Arun
