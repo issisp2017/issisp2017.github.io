@@ -3,7 +3,7 @@
 // Bootstrap Button Variant
 
 @mixin sans-serif-font {
-    font-family: "Source Code Pro", "Dejavu Sans", sans-serif;
+    font-family: "Source Code Pro", "Dejavu Sans", monospace;
 }
 
 @mixin button-variant($color, $background, $border) {
