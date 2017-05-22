@@ -258,6 +258,7 @@
   affiliation: INRIA Rennes
   teacher: true
   img: ronan.png
+  www: http://ronan.lashermes.0nline.fr/
   descr: >
     Ronan Lashermes is a postdoctoral researcher at INRIA Rennes, in the LHS
     lab. Engineer from Grenoble-INP Phelma, after finishing a Ph.D. with the CEA
@@ -279,4 +280,11 @@
     Finally, we will try to analyze some pieces of software to spot
     vulnerabilities wrt fault attacks and discuss what can be automated by tools
     and what would be hard to achieve automatically.  
+
+
+- lastname: Feist
+  firstname: Josselin
+  id: josselin
+  affiliation: Trail of Bits
+  teacher: true
 
