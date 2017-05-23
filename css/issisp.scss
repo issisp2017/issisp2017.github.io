@@ -195,16 +195,22 @@ header {
         padding-bottom: 50px;
 
         .intro-title {
-            padding: 15px;
             font-size: 55px;
-            margin-bottom: 35px;
             opacity: 1;
             font-weight: 700;
-
+            #logo-title {
+            }
+            
             #intro-subtitle {
-                padding-top: 35px;
+                position: relative;
+                top: 20px;
                 font-weight: 700;
-                font-size: 35px;
+                font-size: 30px;
+            }
+
+            #register {
+                position: relative;
+                top: 80px;
             }
 
             .btn-click {
@@ -227,7 +233,8 @@ header {
                 color : white;
                 font-weight: 800;
               }
-            margin-top : 700px;
+            position: relative;
+            top: 100px;
             margin-bottom: 45px;
         }
     }
@@ -235,30 +242,34 @@ header {
 
 
 @media(min-width:768px) {
-    #intro-subtitle {
-        padding: 0px;
-        margin-top: -65px;;
-    }
-
     header {
         .intro {
-            padding-top:50px;
+            padding-top:10px;
             padding-bottom: 50px;
 
             .intro-title {
                 opacity: 1;
                 font-weight: 700;
-                font-weight: 700;
                 font-size: 45px;
                 line-height: 50px;
 
-                .register {
-                    padding-top: 15px;
+                #logo-title {
+                    position:relative;
+                    top: 100px;
+                }
+                #intro-subtitle {
+                    position: relative;
+                    top: 200px;
+                    font-size: 45px;
+                }
+                #register {
+                    position:relative;
+                    top: 250px;
                 }
             }
 
             #intro-information {
-                margin-top: 1000px;
+                margin-top: 800px;
                 margin-bottom: 50px;
                 p {
                     font-size: 35px;
