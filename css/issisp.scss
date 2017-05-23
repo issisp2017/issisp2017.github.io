@@ -94,6 +94,13 @@ a.active {
         &.active {
             color: darken($theme-primary, 10%);
         }
+
+        img {
+            padding: 5px;
+            margin-top: -20px;
+            height: 300%;
+            width: auto;
+        }
     }
     .navbar-collapse {
         border-color: fade-out(white, .02);
@@ -149,6 +156,14 @@ a.active {
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
+
+            img {
+                padding: 5px;
+                margin-top: -30px;
+                height: 400%;
+                width: auto;
+            }
+
         }
         .navbar-nav>.active>a {
             border-radius: 3px;
@@ -162,6 +177,7 @@ a.active {
     .navbar-custom.affix {
         background-color: $gray-darker;
         padding: 10px 0;
+        padding-bottom: 15px;
     }
 }
 
@@ -175,35 +191,22 @@ header {
     color: white;
 
     .intro {
-        padding-top: 75px;
+        padding-top: 55px;
         padding-bottom: 50px;
 
         .intro-title {
-            @include sans-serif-font;
             padding: 15px;
             font-size: 55px;
-            margin-bottom: 55px;
+            margin-bottom: 35px;
             opacity: 1;
             font-weight: 700;
-        }
-        .intro-subtitle {
-            padding: 15px;
-            font-weight: 700;
-            font-size: 45px;
-            line-height: 50px;
-            margin-bottom: 35px;
-        }
-        .intro-information {
-            padding: 12px;
-            p { font-size: 40px;
-                color : white;
+
+            #intro-subtitle {
+                padding-top: 35px;
                 font-weight: 700;
-              }
-            margin-top : 200px;
-            margin-bottom: 45px;
-        }
-        .register {
-            margin-top:80px;
+                font-size: 35px;
+            }
+
             .btn-click {
                 font-weight: 700;
                 font-size:30px;
@@ -218,40 +221,55 @@ header {
                 border-color: $theme-primary ;
             }
         }
+        #intro-information {
+            padding: 12px;
+            p { font-size: 25px;
+                color : white;
+                font-weight: 800;
+              }
+            margin-top : 700px;
+            margin-bottom: 45px;
+        }
     }
-
 }
 
+
 @media(min-width:768px) {
+    #intro-subtitle {
+        padding: 0px;
+        margin-top: -65px;;
+    }
+
     header {
-    .intro {
-            padding-top:150px;
+        .intro {
+            padding-top:50px;
             padding-bottom: 50px;
 
             .intro-title {
-                font-size: 90px;
-
-                margin-bottom: 55px;
                 opacity: 1;
                 font-weight: 700;
-            }
-            .intro-subtitle {
                 font-weight: 700;
-                font-size: 50px;
+                font-size: 45px;
                 line-height: 50px;
-                margin-bottom: 35px;
+
+                .register {
+                    padding-top: 15px;
+                }
             }
-            .intro-information {
-                margin-top: 250px;
+
+            #intro-information {
+                margin-top: 1000px;
                 margin-bottom: 50px;
-                p { font-size: 35px;
+                p {
+                    font-size: 35px;
                     color : white;
                     font-weight: 800;
-                  }
+                }
             }
         }
     }
 }
+
 
 p.bio {
     text-align: left;

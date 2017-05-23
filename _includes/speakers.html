@@ -8,8 +8,10 @@
     <div class="row">
       {% for s in speakers %}
       <div class="speaker col-xs-12 col-sm-6 col-md-4">
+        {% if s.img %}
         <img alt="{{ s.firstname }}" src="/assets/img/people/{{ s.img }}"
              class="myimg img-responsive img-circle"/>
+        {% endif %}
         <h4>
           {% if s.www %}
           <a href="{{ s.www }}">
