@@ -32,27 +32,27 @@
   img: roberto.png
   descr: >-
     Roberto Giacobazzi was born in 1964 in Modena, Italy. He received the Laurea
-    degree in Computer Science in 1988 from the University 
+    degree in Computer Science in 1988 from the University
     of Pisa, and in 1993 he received the Ph.D. in Computer Science from the same university. From 1993 to 1995 he had a Post Doctoral
     Research position at Laboratoire d'Informatique (LIX), Ecole Polytechnique (Paris) in the equipe Cousot. From 1995 to 1998 he was
     (tenured) Assistant Professor in Computer Science at the University of Pisa. From 1998 to 2000 he was Associate Professor at the
-    University of Verona. From May 2000 until now he is Full Professor in Computer Science at the University of Verona. 
+    University of Verona. From May 2000 until now he is Full Professor in Computer Science at the University of Verona.
     The research interests of Roberto Giacobazzi include abstract interpretation, static program analysis, semantics of programming
     languages, program verification, abstract model-checking, program transformation and optimization, digital asset protection, code
     obfuscation, software watermarking and lattice theory.
 
   abstract: >-
     In this course I will introduce the basics of code obfuscation starting from
-    its formal definition towards the impossibility result 
+    its formal definition towards the impossibility result
     on universal Virtual-Black Box obfuscation of a generic Turing Machine. We
-    then see how to weaken this result in order to have 
+    then see how to weaken this result in order to have
     possibility results for restricted models of attack to SW systems as
-    specified as automatic program analysis tools and algorithms. 
+    specified as automatic program analysis tools and algorithms.
     We will see through some examples how obfuscation can become possible
-    against an attacker specified as an interpreter and how 
+    against an attacker specified as an interpreter and how
     virtualisation provides the best strategy to protect your code against automated program analysis.
 
-    
+
 - lastname: De Sutter
   firstname: Bjorn
   www: http://users.elis.ugent.be/~brdsutte/
@@ -66,17 +66,17 @@
      Faculty of Engineering and Architecture of Ghent University. He got both
      his MSc and his PhD from Ghent University in 1997 resp. 2002. Amongst others,
      he teaches courses on Compilers, and on Software Hacking and Protection,
-     which are also his major research interests. The focus of his compiler 
+     which are also his major research interests. The focus of his compiler
      technology research is on increasing the productivity of programmers by
-     automating necessary tasks for non-functional requirements, 
+     automating necessary tasks for non-functional requirements,
      incl. the protection of software against all kinds of attacks. His more
-     than 80 peer-reviewed publications cover protections 
+     than 80 peer-reviewed publications cover protections
      against fault injection attacks, against tampering attacks, against reverse
-     engineering attacks, against memory exploit attacks, 
+     engineering attacks, against memory exploit attacks,
      against patch-based attacks, and against timing side channel attacks. He
-     coordinated the EU FP7 STREP ASPIRE (Advanced Software 
+     coordinated the EU FP7 STREP ASPIRE (Advanced Software
      Protection: Integration, Research, and Exploitation), which was evaluated
-     by the EC as excellent in Feb. 2017, and participated in 
+     by the EC as excellent in Feb. 2017, and participated in
      numerous other national and international projects. He received the Annual FWO Barco Award in 1998 for his Master thesis, and is
      the recipient of a 2013 HiPEAC Technology Transfer Award.
 
@@ -91,9 +91,9 @@
   descr: >-
      I am a full time Professor in the department of Computer Science,
      University at Louisiana, Lafayette, USA. I earned my Ph.D. degree in C
-     omputer Science from the Case Western Reserve University in 199 0. 
+     omputer Science from the Case Western Reserve University in 199 0.
 
-     My research interests are malware analysis and autonomous vehicles 
+     My research interests are malware analysis and autonomous vehicles
 
 - lastname: Gu
   firstname: Yuan Xiang
@@ -107,15 +107,15 @@
     Mr. Gu was the co-founder of Cloakware Corporation that. In 2007, Cloakware
     was acquired by Irdeto. Since then, as a chief architect and a senior research
     director of Irdeto, Mr. Gu is also leading the development of next generation
-    Cloakware technology, and research 
+    Cloakware technology, and research
     collaboration with research communities worldwide. Mr. Gu has been invited
     and visited over 40 universities and research institutes in North American,
     Europe and Asia, and organizing international security forums (workshops,
-    summer schools, and association) and 
+    summer schools, and association) and
     becomes an active speaker at many international conferences and workshops to
     promote software security and protection. Mr. Gu was invited being a guest
     professor of Northwest University in China. As a native Chinese, Mr. Gu often
-    represents Irdeto to involve many 
+    represents Irdeto to involve many
     business development and research collaboration activities in China.
 
     Prior to joining Cloakware, Mr. Gu has worked as a senior scientist and
@@ -132,31 +132,31 @@
     No matter for business use or personal use, un-trusted environments have
     more dominated in digital world from consumer devices to home networks, to
     the public Internet, to the cloud and web services, and to the Internet of
-    Things, where traditional security 
+    Things, where traditional security
     models are inadequate to address emerging threat models and attacks. The
     wireless connectivity quickly gains in popularity in recent years and
     provides anything/anytime/anywhere connection to playing contents, e-mail,
-    instant messaging, online gaming and shopping, 
+    instant messaging, online gaming and shopping,
     mobile banking, mobile payment, weather and travel information, connected
     and autonomous vehicles and much more of other digital services. All of
     these makes white-box security and digital asset protection much more
-    challenging. This course describes and discusses  
-    white-box software attack scenarios and security patterns (that are abstracted 
+    challenging. This course describes and discusses
+    white-box software attack scenarios and security patterns (that are abstracted
     from many application domains in terms of use cases, v ulnerability and
     threat analysis, and security solutions), the security lifecycle of digital
-    asset application mandating protection 
+    asset application mandating protection
     from creation, through distribution and then ultimately consumption from
     being deployed in the field. Also, we introduce homomorphic obfuscation
     technology and detail certain currently software protection technologies in
-    markets as a guide to the state of the art including. 
+    markets as a guide to the state of the art including.
 
     This course is structured in two sessions: 1) a course lecture; 2) a panel
     to host a group of industrial experts to present, discuss and explore some
     most interesting software and information protection issues in emerging
-    markets. 
+    markets.
 
 
-  
+
 - lastname: Davidson
   firstname: Jack
   id: davidson
@@ -167,33 +167,33 @@
   img: jack.jpg
   descr: >-
      I am Professor of Computer Science at the University of Virginia. I
-     received my Ph.D. from the University of Arizona in 1981 and 
+     received my Ph.D. from the University of Arizona in 1981 and
      joined the University of Virginia in 1982. Over the years, I have worked in
      many areas including compilers, embedded systems, high-performance
      computing, and computer security. My current research foci is on software
-     protection and computer security. In the 
+     protection and computer security. In the
      area of software security, my group has developed dynamic methods to
-     prevent adversaries from compromising intellectual property.  
+     prevent adversaries from compromising intellectual property.
      In the area of computer security, we have developed methods for "hardening"
-     binaries to make them impervious to cyber attack. In 
+     binaries to make them impervious to cyber attack. In
      2014–2016, I lead a team at the University of Virginia that competed in the
-     DARPA Cyber Grand Challenge (CGC)—a contest to build an 
+     DARPA Cyber Grand Challenge (CGC)—a contest to build an
      autonomous supercomputer to automatically analyze vulnerable binaries and
      patch them—all without human intervention. Our entry, produced in
      collaboration with Grammatech, Inc., finished second winning a $1M prize.  I
      am also leading a DARPA project, "Double Helix: High Assurance N-variant
      Systems." Double Helix is a binary analysis and transformation system that
-     processes binary 
+     processes binary
      applications and produces variants with diverse binary structures that are
-     intended to be deployed within a multi-variant system. A 
+     intended to be deployed within a multi-variant system. A
      unique aspect of Double Helix is that it employs structured diversity to
-     guarantee that variants behave differently yielding 
+     guarantee that variants behave differently yielding
      high-assurance systems.  Both CGC and Double Helix rely on high-precision
-     binary analysis and rewriting to reverse engineer and 
+     binary analysis and rewriting to reverse engineer and
      transform binaries.
 
 
-  
+
 - lastname: Bardin
   firstname: Sébastien
   www: http://sebastien.bardin.free.fr
@@ -216,7 +216,7 @@
     Bardin obtained his PhD in 2005 at ENS Cachan, France, in the field of
     formal methods.
 
-  
+
 - lastname: Bonichon
   firstname: Richard
   www: http://rbonichon.github.io
@@ -264,27 +264,27 @@
     lab. Engineer from Grenoble-INP Phelma, after finishing a Ph.D. with the CEA
     and the UVSQ in 2014, he worked in a startup to develop physical attack
     benches for devices evaluation. He later joined INRIA and the LHS lab for a
-    postdoc on fault attacks. 
+    postdoc on fault attacks.
     He is interested in the security of embedded systems and hardware components
     and how the abstraction barriers (mathematics/software, hardware/software) can
-    be exploited to compromise a device. 
+    be exploited to compromise a device.
   abstract: >
     What happens if your program is not executed as it should, if some instructions are not executed?
     Here comes the world of fault injection attacks, where all your assumptions
-    on the adversary's capabilities tumble down. 
+    on the adversary's capabilities tumble down.
     Fault attacks have mainly been used to break cryptographic algorithms in the
     past, but we will see how they can also be used in relation with software
-    attacks against embedded systems (Phones, IoT, set-top boxes...). 
+    attacks against embedded systems (Phones, IoT, set-top boxes...).
     Of course, what we can do to protect ourselves will be discussed as well as
-    the impact of modern technologies (complex SoC, TrustZone, ...). 
+    the impact of modern technologies (complex SoC, TrustZone, ...).
     Finally, we will try to analyze some pieces of software to spot
     vulnerabilities wrt fault attacks and discuss what can be automated by tools
-    and what would be hard to achieve automatically.  
+    and what would be hard to achieve automatically.
 
 
 - lastname: Feist
   firstname: Josselin
   id: josselin
   affiliation: Trail of Bits
+  www: https://www.trailofbits.com
   teacher: true
-

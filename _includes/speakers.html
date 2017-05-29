@@ -57,8 +57,10 @@
                   <div class="row">
 
                     <div class="col-md-3">
+                      {% if s.img %}
                       <img alt="{{ s.firstname }}" src="/assets/img/people/{{ s.img }}"
                            class="myimg img-responsive img-circle"/>
+                      {% endif %}
                       <div class="links">
                         {% if s.www %}
                       <a href="{{ s.www }}">
@@ -86,7 +88,7 @@
                       {% endif %}
                     </div>
                   </div>
-                  
+
 
                 </div>
               </div>
