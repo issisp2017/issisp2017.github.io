@@ -513,9 +513,11 @@ div.sponsor {
     img {
         width: auto;
         height: auto;
+        margin: auto;
         max-height:150px;
-        margin-bottom: 20px;
+        padding: 2px;
     }
+    margin-bottom: 30px;
 }
 
 h3, h5 {

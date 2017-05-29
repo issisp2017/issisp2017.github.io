@@ -25,4 +25,9 @@
   priority: 1
   url: https://irdeto.com
 
+- logo: logo_pregdr_securite.png
+  name: Pré-GDR Sécurité Informatique
+  priority: 0
+  url: http://gdr-securite.irisa.fr/
+
 

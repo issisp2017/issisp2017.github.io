@@ -10,13 +10,15 @@
     </div>
     <div class="row">
       {% endif %}
-    <div class="sponsor col-md-3 col-sm-6 col-xs-12">
-      <a href="{{ s.url }}">
-        <img class="img-responsive"
-             alt="{{ s.name }}"
-             src="/assets/img/logo/{{ s.logo }}"/>
-      </a>
-    </div>
+      <div class="sponsor text-center col-md-6 col-sm-6 col-xs-12">
+        <div class="center-block">
+          <a href="{{ s.url }}">
+            <img class="img-responsive"
+                 alt="{{ s.name }}"
+                 src="/assets/img/logo/{{ s.logo }}"/>
+          </a>
+        </div>
+      </div>
     {% endfor %}
     </div>
   </div>
