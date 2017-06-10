@@ -8,17 +8,19 @@
   teacher: true
   img: christian.png
   descr: >-
-    I'm an Associate Professor in the Department of Computer Science at the
-    University of Arizona. Prior to arriving in Tucson I worked at the University
-    of Auckland, New Zealand, and before that I got my Ph.D. from Lund University,
-    Sweden. I have also held a visiting position at the Chinese Academy of
-    Sciences in Beijing, China. My main research interest is computer security, in
-    particular the so-called Man-At-The-End Attack which occurs in settings where
-    an adversary has physical access to a device and compromises it by tampering
-    with its hardware or software. My current research focuses on remote
-    man-at-the-end attacks which occur in distributed systems where untrusted
-    clients are in frequent communication with trusted servers over a network, and
-    a malicious user can get an advantage by compromising an untrusted device.
+    Christian Collberg is a Professor at the Department of Computer Science at
+    the University of Arizona. He got his PhD from Lund University, Sweden and 
+    taught at University of Auckland, New Zealand, before joining Arizona. His
+    current research interests lie in the protection of software from reverse
+    engineering and tampering, as well as in the reproducibility of computer
+    science research (see FindResearch.org). He is the author of "Surreptitious
+    Software, Obfuscation, Watermarking, and Tamperproofing for Software Protection".
+
+  abstract: >-
+    We will look at traditional ways of obfuscating code, i.e. ways to make
+    software harder to understand and analyze. There will be a significant
+    hands-on practical component to this part of the course, where we will
+    obfuscate code using automatic tools.
 
 
 
