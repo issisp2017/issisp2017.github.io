@@ -261,7 +261,7 @@
   teacher: true
   img: ronan.png
   www: http://ronan.lashermes.0nline.fr/
-  descr: >
+  descr: >-
     Ronan Lashermes is a postdoctoral researcher at INRIA Rennes, in the LHS
     lab. Engineer from Grenoble-INP Phelma, after finishing a Ph.D. with the CEA
     and the UVSQ in 2014, he worked in a startup to develop physical attack
@@ -270,7 +270,7 @@
     He is interested in the security of embedded systems and hardware components
     and how the abstraction barriers (mathematics/software, hardware/software) can
     be exploited to compromise a device.
-  abstract: >
+  abstract: >-
     What happens if your program is not executed as it should, if some instructions are not executed?
     Here comes the world of fault injection attacks, where all your assumptions
     on the adversary's capabilities tumble down.
@@ -290,3 +290,10 @@
   affiliation: Trail of Bits
   www: https://www.trailofbits.com
   teacher: true
+  descr: >-
+    Josselin Feist is a Senior Security Engineer at Trail of Bits where he 
+    works on the design and implementation of program analysis techniques. 
+    He holds a Ph.D. in static analysis and symbolic execution. At Trail of 
+    Bits, he brings his experience on adapting theoretical methods to 
+    practical problems. Josselin has spoken at both academic and 
+    industrial conferences.

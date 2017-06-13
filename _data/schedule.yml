@@ -12,12 +12,11 @@
     - course: lunch
       slot: lunch
     - course: basicexploit
-      slot: l3
-    - course: break
-      slot: break2
-    - course: basicexploit
-      slot: l4
+      slot: lexploit
       handson: true
+    - course: break
+      slot: break_exploit
+
 - day: tuesday
   date: 2017-07-18
   courses:
