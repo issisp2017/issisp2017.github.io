@@ -2,7 +2,7 @@
 
 - logo: digicosme.png
   name: DigiCosme
-  priority: 2
+  priority: 3
   url: https://digicosme.lri.fr/
 
 - logo: list.svg
@@ -14,6 +14,11 @@
   name: Trail of Bits
   priority: 5
   url: https://www.trailofbits.com
+
+- logo: quarkslab.jpg
+  name: Quarkslab
+  priority: 2
+  url: https://www.quarkslab.com/
 
 - logo: acm.png
   name: ACM
