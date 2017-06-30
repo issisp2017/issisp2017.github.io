@@ -35,12 +35,18 @@
   descr: >-
     Roberto Giacobazzi was born in 1964 in Modena, Italy. He received the Laurea
     degree in Computer Science in 1988 from the University
-    of Pisa, and in 1993 he received the Ph.D. in Computer Science from the same university. From 1993 to 1995 he had a Post Doctoral
-    Research position at Laboratoire d'Informatique (LIX), Ecole Polytechnique (Paris) in the equipe Cousot. From 1995 to 1998 he was
-    (tenured) Assistant Professor in Computer Science at the University of Pisa. From 1998 to 2000 he was Associate Professor at the
-    University of Verona. From May 2000 until now he is Full Professor in Computer Science at the University of Verona.
-    The research interests of Roberto Giacobazzi include abstract interpretation, static program analysis, semantics of programming
-    languages, program verification, abstract model-checking, program transformation and optimization, digital asset protection, code
+    of Pisa, and in 1993 he received the Ph.D. in Computer Science from the same
+    university. From 1993 to 1995 he had a Post Doctoral 
+    Research position at Laboratoire d'Informatique (LIX), Ecole Polytechnique
+    (Paris) in the equipe Cousot. From 1995 to 1998 he was 
+    (tenured) Assistant Professor in Computer Science at the University of
+    Pisa. From 1998 to 2000 he was Associate Professor at the 
+    University of Verona. From May 2000 until now he is Full Professor in
+    Computer Science at the University of Verona. 
+    The research interests of Roberto Giacobazzi include abstract
+    interpretation, static program analysis, semantics of programming 
+    languages, program verification, abstract model-checking, program
+    transformation and optimization, digital asset protection, code 
     obfuscation, software watermarking and lattice theory.
 
   abstract: >-
@@ -79,9 +85,33 @@
      coordinated the EU FP7 STREP ASPIRE (Advanced Software
      Protection: Integration, Research, and Exploitation), which was evaluated
      by the EC as excellent in Feb. 2017, and participated in
-     numerous other national and international projects. He received the Annual FWO Barco Award in 1998 for his Master thesis, and is
+     numerous other national and international projects. He received the Annual
+     FWO Barco Award in 1998 for his Master thesis, and is 
      the recipient of a 2013 HiPEAC Technology Transfer Award.
 
+  abstract: >-
+    <h4>Lecture 1: Anti-deobfuscation techniques</h4>
+    <p>In the first part of this lecture, we will study the most powerful
+    deobfuscating attacks, including both methods deployed today by 
+    industrial penetration testers and state-of-the-art academic methods such as
+    debugging, pointer chaining, tracing, pattern 
+    matching, symbolic execution, and generic de-obfuscation techniques. In the
+    second part of the lecture, we will discuss some 
+    advanced defenses against these attacks, such as more advanced obfuscations,
+    but also anti-taint techniques, anti-debugging 
+    techniques, anti-tracing techniques, anti-tampering techniques, and code
+    mobility and renewability. </p>
+    <h4>Lecture 2: Protection Evaluation</h4>
+    <p>
+    In the first part of this lecture, we will address important aspects of
+    software protection strength, such as potency, resilience, 
+    and stealth. What are they, when to they matter, why do they matter, how can
+    we measure them? We will also discuss techniques to 
+    model the relation between attacks and protections. In the second part of the
+    lecture, we will discuss do’s and don’ts of 
+    penetration testing experiments, i.e., experiments in which attackers are asked to attack protected code to learn about the level
+    of protection that is achieved. There are quite some pitfalls to avoid in order to end up with meaningful results
+    </p>
 
 - lastname: Lakhotia
   firstname: Arun
@@ -96,6 +126,23 @@
      omputer Science from the Case Western Reserve University in 199 0.
 
      My research interests are malware analysis and autonomous vehicles
+
+  abstract: >-
+    Analysis of malware introduces new challenges that are not present when
+    analyzing programs in the normal context. Besides the fact that the
+    programs are in a binary form, they are explicitly created to defeat
+    analysis by hiding behind undecidability. Nonetheless, I will show that
+    program analysis methods can indeed be used to answer a variety of
+    questions related to malware. For instance, by relaxing the requirements of
+    safety one can use program analysis to provide semantics based “features”
+    to a machine learner. Similarity analysis is a key tool for understanding
+    and querying big-data of code, in particular in the context of malware
+    analysis and mitigation. We will provide an end-to-end experience in
+    analyzing malware binaries, extracting semantics features, and using those
+    in a machine learner to find similar malware in a repository. We will use
+    these hands-on exercises to also highlight opportunities and challenges for
+    further research, and introduce you to the state-of-the-art technologies to
+    get started.
 
 - lastname: Gu
   firstname: Yuan Xiang
