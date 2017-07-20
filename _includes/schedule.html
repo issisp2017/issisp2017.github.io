@@ -8,13 +8,6 @@
   {% assign slots = site.data.slots %}
 
 
-  <div class="row alert alerted">
-    <p>
-      The schedule below may still be subject to change.
-      Any change will be updated here.
-    </p>
-  </div>
-
   <div class="row">
     <ul class="nav nav-pills nav-justified">
       {% for entry in schedule %}
@@ -62,10 +55,26 @@
                   {% else %}
                   <div class="col-sm-12 col-md-6 nolecture">
                     {% endif %}
-                    {{ lecture.title }}
-                    {% if c.handson %}
-                    [hands-on]
+
+                    <ul class="fa-ul">
+                      <li>
+                        {{ lecture.title }}
+                        {% if c.handson %}
+                        [hands-on]
+                        {% endif %}
+                      </li>
+                      
+
+                    {% if c.files %}
+                    {% for f in c.files %}
+                      <li>
+                        <a class="slide" href="/assets/slides/{{ f.file }}">
+                          <i class="fa fa-file-pdf-o" aria-hidden="true"></i>{{ f.name }}</a>
+                      </li>
+                    {% endfor %}
                     {% endif %}
+
+                    </ul>
                   </div>
                   {% if lecture.teacher %}
                   <div class="col-sm-12 col-md-6 teacher">

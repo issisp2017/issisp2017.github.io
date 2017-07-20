@@ -4,15 +4,29 @@
   courses:
     - course: intro
       slot: l1
+      files:
+        - name: Introduction
+          file: introduction.pdf
+          type: pdf
+        - name: Analysis
+          file: analysis.pdf
+          type: pdf
+
     - course: break
       slot: break1
     - course: intro
       slot: l2
       handson: true
+      files:
+        - name: Slides
+          file: obfuscation-I.pdf
+          type: pdf
+        
     - course: lunch
       slot: lunch
     - course: basicexploit
       slot: lexploit
+
       handson: true
     - course: break
       slot: break_exploit
@@ -22,18 +36,38 @@
   courses:
     - course: waterfinger
       slot: l1
+      files:
+        - name: Slides
+          file: tamper-proofing.pdf
+          type: pdf
+
     - course: break
       slot: break1
     - course: desutter1
       slot: l2
+      files:
+        - name: Slides
+          file: advanced-anti-deobfuscation-issisp2017.pdf
+          type: pdf
+      
     - course: lunch
       slot: lunch
     - course: desutter2
       slot: l3
+      files:
+        - name: Slides
+          file: software-protection-evaluation-issisp2017.pdf
+          type: pdf
+
     - course: break
       slot: break2
     - course: malware
       slot: l4
+      files:
+        - name: Slides
+          file: 2017-Lakhotia_Malware_Analysis.pdf
+          type: pdf
+
     - course: poster
       slot: l5
 - day: Wednesday
@@ -41,6 +75,11 @@
   courses:
     - course: giacobazzi1
       slot: l1
+      files:
+        - name: Slides (both sessions)
+          file: rgiacobazzi-issisp2017.pdf
+          type: pdf
+
     - course: break
       slot: break1
 
@@ -55,16 +94,31 @@
       slot: break2
     - course: malware
       slot: l4
-      handson: true
+      files:
+        - name: Slides
+          file: 2017-Lakhotia_Malware_Analysis.pdf
+          type: pdf
+
+
 - day: Thursday
   date: 2017-07-20
   courses:
     - course: dynprot
       slot: l1
+      files:
+        - name: Slides 
+          file: SSISP_Paris_2017_Opt.pdf
+          type: pdf
+
     - course: break
       slot: break1
     - course: dynprot
       slot: l2
+      files:
+        - name: Slides 
+          file: Cyber_Grand_Challenge_Talk_V1_Opt.pdf 
+          type: pdf
+
     - course: lunch
       slot: lunch
     - course: social
@@ -74,6 +128,11 @@
   courses:
     - course: side_channel
       slot: l1
+      files:
+        - name: Slides 
+          file: dcourousse-issisp2017.pdf
+          type: pdf
+      
     - course: break
       slot: break1
 
