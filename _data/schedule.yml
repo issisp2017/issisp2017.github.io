@@ -140,7 +140,7 @@
       slot: l2
       files:
         - name: Slides and content
-          type: link
+          type: gitlab
           file: https://artefaritaj.gitlab.io/ISSISP2017/
     - course: lunch
       slot: lunch
@@ -154,3 +154,7 @@
       slot: lastbreak
     - course: panel
       slot: panel2
+      files:
+        - name: Intelligent vehicle
+          file: intelligent_vehicle_hostile_env-issisp2017.pdf
+          type: pdf

@@ -71,6 +71,9 @@
                         {% if f.type == "pdf" %}
                         <a class="slide" href="/assets/slides/{{ f.file }}">
                           <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                          {% elsif f.type == "gitlab" %}
+                          <a href="{{ f.file }}">
+                            <i class="fa fa-gitlab" aria-hidden="true"></i>
                           {% else %}
                           <a href="{{ f.file }}">
                           {% endif %}
