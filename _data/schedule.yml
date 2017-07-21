@@ -138,10 +138,18 @@
 
     - course: fault_injection
       slot: l2
+      files:
+        - name: Slides and content
+          type: link
+          file: https://artefaritaj.gitlab.io/ISSISP2017/
     - course: lunch
       slot: lunch
     - course: ind_lecture
       slot: panel1
+      files:
+        - name: Slides
+          file: industrial_challenges_yuan-issisp2017.pdf
+          type: pdf
     - course: break
       slot: lastbreak
     - course: panel

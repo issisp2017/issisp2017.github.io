@@ -68,8 +68,15 @@
                     {% if c.files %}
                     {% for f in c.files %}
                       <li>
+                        {% if f.type == "pdf" %}
                         <a class="slide" href="/assets/slides/{{ f.file }}">
-                          <i class="fa fa-file-pdf-o" aria-hidden="true"></i>{{ f.name }}</a>
+                          <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                          {% else %}
+                          <a href="{{ f.file }}">
+                          {% endif %}
+                          {{ f.name }}
+                        </a>
+                         
                       </li>
                     {% endfor %}
                     {% endif %}
