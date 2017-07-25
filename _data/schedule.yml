@@ -26,8 +26,12 @@
       slot: lunch
     - course: basicexploit
       slot: lexploit
-
       handson: true
+      files:
+        - name: Slides
+          file: Intro_Exploitation_ISSISP.pdf
+          type: pdf
+
     - course: break
       slot: break_exploit
 
@@ -96,7 +100,7 @@
       slot: l4
       files:
         - name: Slides
-          file: 2017-Lakhotia_Malware_Analysis.pdf
+          file: 2017-Lakhotia_Malware_Analysis-2.pdf
           type: pdf
 
 
