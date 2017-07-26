@@ -94,6 +94,11 @@
 
     - course: pfm
       slot: l3
+      files:
+        - name: Slides 
+          file: sbardin-issisp2017.pdf
+          type: pdf
+
     - course: break
       slot: break2
     - course: malware
